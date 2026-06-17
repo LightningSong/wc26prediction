@@ -1,0 +1,4706 @@
+{
+  "Argentina": [
+    {
+      "date": "Sep 2025",
+      "rival": "Brasil",
+      "competition": "Eliminatorias CONMEBOL",
+      "goals_scored": 4,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Colombia",
+      "competition": "Eliminatorias CONMEBOL",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Venezuela",
+      "competition": "Eliminatorias CONMEBOL",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Ecuador",
+      "competition": "Eliminatorias CONMEBOL",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Venezuela",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Puerto Rico",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 6,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Angola",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Mauritania",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "España",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Zambia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 5,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Honduras",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Islandia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    }
+  ],
+  "Brasil": [
+    {
+      "date": "Sep 2025",
+      "rival": "Colombia",
+      "competition": "Eliminatorias CONMEBOL",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Argentina",
+      "competition": "Eliminatorias CONMEBOL",
+      "goals_scored": 1,
+      "goals_conceded": 4,
+      "result": "loss"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Ecuador",
+      "competition": "Eliminatorias CONMEBOL",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Paraguay",
+      "competition": "Eliminatorias CONMEBOL",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Chile",
+      "competition": "Eliminatorias CONMEBOL",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Bolivia",
+      "competition": "Eliminatorias CONMEBOL",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Corea del Sur",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 5,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Japón",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 3,
+      "result": "loss"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Senegal",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Túnez",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Francia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Marruecos",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    }
+  ],
+  "Uruguay": [
+    {
+      "date": "Sep 2025",
+      "rival": "Perú",
+      "competition": "Eliminatorias CONMEBOL",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Chile",
+      "competition": "Eliminatorias CONMEBOL",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "R. Dominicana",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Uzbekistán",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "México",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Estados Unidos",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 5,
+      "result": "loss"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Inglaterra",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Argelia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Costa Rica",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Nueva Zelanda",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Gales",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Arabia Saudita",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    }
+  ],
+  "Colombia": [
+    {
+      "date": "Sep 2025",
+      "rival": "Bolivia",
+      "competition": "Eliminatorias CONMEBOL",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Venezuela",
+      "competition": "Eliminatorias CONMEBOL",
+      "goals_scored": 6,
+      "goals_conceded": 3,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "México",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 4,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Canadá",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Nueva Zelanda",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Australia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Croacia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Francia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 3,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Costa Rica",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 3,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Jordania",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Nigeria",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Islandia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    }
+  ],
+  "Ecuador": [
+    {
+      "date": "Oct 2025",
+      "rival": "Estados Unidos",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "México",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Canadá",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Nueva Zelanda",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Marruecos",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Países Bajos",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Arabia Saudita",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Guatemala",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Honduras",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Serbia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Panamá",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Costa de Marfil",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    }
+  ],
+  "Paraguay": [
+    {
+      "date": "Sep 2025",
+      "rival": "Ecuador",
+      "competition": "Eliminatorias CONMEBOL",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Perú",
+      "competition": "Eliminatorias CONMEBOL",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Japón",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 2,
+      "result": "draw"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Corea del Sur",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Estados Unidos",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "México",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Grecia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Marruecos",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Nicaragua",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 4,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Bolivia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Ghana",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Estados Unidos",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 4,
+      "result": "loss"
+    }
+  ],
+  "Estados Unidos": [
+    {
+      "date": "Mar 2025",
+      "rival": "Canadá",
+      "competition": "Liga de Naciones CONCACAF",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2025",
+      "rival": "Trinidad y Tobago",
+      "competition": "Copa Oro 2025",
+      "goals_scored": 5,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2025",
+      "rival": "Arabia Saudita",
+      "competition": "Copa Oro 2025",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2025",
+      "rival": "Haití",
+      "competition": "Copa Oro 2025",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2025",
+      "rival": "Costa Rica",
+      "competition": "Copa Oro 2025",
+      "goals_scored": 2,
+      "goals_conceded": 2,
+      "result": "draw"
+    },
+    {
+      "date": "Jul 2025",
+      "rival": "Guatemala",
+      "competition": "Copa Oro 2025",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jul 2025",
+      "rival": "México",
+      "competition": "Copa Oro 2025",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Corea del Sur",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Japón",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Australia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Uruguay",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 5,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Paraguay",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 4,
+      "goals_conceded": 1,
+      "result": "win"
+    }
+  ],
+  "México": [
+    {
+      "date": "Jun 2025",
+      "rival": "Costa Rica",
+      "competition": "Copa Oro 2025",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2025",
+      "rival": "Arabia Saudita",
+      "competition": "Copa Oro 2025",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jul 2025",
+      "rival": "Honduras",
+      "competition": "Copa Oro 2025",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jul 2025",
+      "rival": "Estados Unidos",
+      "competition": "Copa Oro 2025",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Japón",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Corea del Sur",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 2,
+      "result": "draw"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Colombia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 4,
+      "result": "loss"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Ecuador",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Uruguay",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Paraguay",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Serbia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 5,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Sudáfrica",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    }
+  ],
+  "Canadá": [
+    {
+      "date": "Jun 2025",
+      "rival": "Honduras",
+      "competition": "Copa Oro 2025",
+      "goals_scored": 6,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2025",
+      "rival": "Curaçao",
+      "competition": "Copa Oro 2025",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2025",
+      "rival": "El Salvador",
+      "competition": "Copa Oro 2025",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2025",
+      "rival": "Guatemala",
+      "competition": "Copa Oro 2025",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Rumanía",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Gales",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Australia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Colombia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Ecuador",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Venezuela",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Uzbekistán",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Bosnia y Herz.",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    }
+  ],
+  "Panamá": [
+    {
+      "date": "Sep 2025",
+      "rival": "El Salvador",
+      "competition": "Eliminatorias CONCACAF",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Jamaica",
+      "competition": "Eliminatorias CONCACAF",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Trinidad y Tobago",
+      "competition": "Eliminatorias CONCACAF",
+      "goals_scored": 3,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Costa Rica",
+      "competition": "Eliminatorias CONCACAF",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Honduras",
+      "competition": "Eliminatorias CONCACAF",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Haití",
+      "competition": "Eliminatorias CONCACAF",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Guatemala",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Cuba",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 4,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "May 2026",
+      "rival": "RD Congo",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Brasil",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 3,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Senegal",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Bosnia y Herz.",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    }
+  ],
+  "Curaçao": [
+    {
+      "date": "Jun 2025",
+      "rival": "Canadá",
+      "competition": "Copa Oro 2025",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Jul 2025",
+      "rival": "Costa Rica",
+      "competition": "Copa Oro 2025",
+      "goals_scored": 0,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "El Salvador",
+      "competition": "Eliminatorias CONCACAF",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Guatemala",
+      "competition": "Eliminatorias CONCACAF",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Honduras",
+      "competition": "Eliminatorias CONCACAF",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Trinidad y Tobago",
+      "competition": "Eliminatorias CONCACAF",
+      "goals_scored": 2,
+      "goals_conceded": 2,
+      "result": "draw"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Panamá",
+      "competition": "Eliminatorias CONCACAF",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Jamaica",
+      "competition": "Eliminatorias CONCACAF",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Belice",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 4,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Aruba",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 4,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Escocia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 4,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Alemania",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 7,
+      "result": "loss"
+    }
+  ],
+  "Haití": [
+    {
+      "date": "Jun 2025",
+      "rival": "Estados Unidos",
+      "competition": "Copa Oro 2025",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Jamaica",
+      "competition": "Eliminatorias CONCACAF",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "El Salvador",
+      "competition": "Eliminatorias CONCACAF",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Costa Rica",
+      "competition": "Eliminatorias CONCACAF",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Guatemala",
+      "competition": "Eliminatorias CONCACAF",
+      "goals_scored": 3,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Honduras",
+      "competition": "Eliminatorias CONCACAF",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Panamá",
+      "competition": "Eliminatorias CONCACAF",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Cuba",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Túnez",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Nueva Zelanda",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Perú",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Escocia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    }
+  ],
+  "Inglaterra": [
+    {
+      "date": "Mar 2025",
+      "rival": "Letonia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2025",
+      "rival": "Andorra",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Andorra",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Serbia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 5,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Letonia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 5,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Serbia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Albania",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Uruguay",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Japón",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Gales",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Nueva Zelanda",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Costa Rica",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    }
+  ],
+  "Francia": [
+    {
+      "date": "Sep 2025",
+      "rival": "Ucrania",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Islandia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Azerbaiyán",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Islandia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 2,
+      "result": "draw"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Ucrania",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 4,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Azerbaiyán",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 3,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Brasil",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Colombia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 3,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Costa de Marfil",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "I. del Norte",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 3,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Perú",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Corea del Sur",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    }
+  ],
+  "Alemania": [
+    {
+      "date": "Sep 2025",
+      "rival": "Eslovaquia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 0,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "I. del Norte",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 3,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Luxemburgo",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 4,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "I. del Norte",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Luxemburgo",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Eslovaquia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 6,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Suiza",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 4,
+      "goals_conceded": 3,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Ghana",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Finlandia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 4,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Estados Unidos",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Japón",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Curaçao",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 7,
+      "goals_conceded": 1,
+      "result": "win"
+    }
+  ],
+  "España": [
+    {
+      "date": "Sep 2025",
+      "rival": "Bulgaria",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Turquía",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 6,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Georgia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Bulgaria",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 4,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Georgia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 4,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Turquía",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 2,
+      "result": "draw"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Serbia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Egipto",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Irak",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Perú",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 3,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Panamá",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Cabo Verde",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    }
+  ],
+  "Portugal": [
+    {
+      "date": "Sep 2025",
+      "rival": "Armenia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 5,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Hungría",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 3,
+      "goals_conceded": 2,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Irlanda",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Hungría",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 2,
+      "result": "draw"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Irlanda",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 0,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Armenia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 9,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "México",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Estados Unidos",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Chile",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Nigeria",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Australia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 3,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Qatar",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 4,
+      "goals_conceded": 0,
+      "result": "win"
+    }
+  ],
+  "Países Bajos": [
+    {
+      "date": "Sep 2025",
+      "rival": "Polonia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Lituania",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 3,
+      "goals_conceded": 2,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Malta",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 4,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Finlandia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 4,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Polonia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Lituania",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 4,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Noruega",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Ecuador",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Argelia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Uzbekistán",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Panamá",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Japón",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 2,
+      "result": "draw"
+    }
+  ],
+  "Bélgica": [
+    {
+      "date": "Sep 2025",
+      "rival": "Liechtenstein",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 6,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Kazajistán",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 6,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Macedonia N.",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Gales",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 4,
+      "goals_conceded": 2,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Kazajistán",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Liechtenstein",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 7,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Estados Unidos",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 5,
+      "goals_conceded": 2,
+      "result": "win"
+    },
+    {
+      "date": "Abr 2026",
+      "rival": "México",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Croacia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Túnez",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 5,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Honduras",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Egipto",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    }
+  ],
+  "Croacia": [
+    {
+      "date": "Sep 2025",
+      "rival": "I. Feroe",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Montenegro",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 4,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Rep. Checa",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Gibraltar",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "I. Feroe",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 3,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Montenegro",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 3,
+      "goals_conceded": 2,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Colombia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Abr 2026",
+      "rival": "Brasil",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 3,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Bélgica",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Eslovenia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Bolivia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Costa Rica",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    }
+  ],
+  "Suiza": [
+    {
+      "date": "Sep 2025",
+      "rival": "Kosovo",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 4,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Eslovenia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Suecia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Eslovenia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Suecia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 4,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Kosovo",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Alemania",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 3,
+      "goals_conceded": 4,
+      "result": "loss"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Noruega",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Jordania",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 4,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Australia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Estados Unidos",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 4,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Qatar",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    }
+  ],
+  "Escocia": [
+    {
+      "date": "Sep 2025",
+      "rival": "Dinamarca",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Bielorrusia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Grecia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 3,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Bielorrusia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Grecia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 3,
+      "result": "loss"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Dinamarca",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 4,
+      "goals_conceded": 2,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Japón",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Costa de Marfil",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Curaçao",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 4,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Bolivia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 4,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Perú",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Haití",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    }
+  ],
+  "Suecia": [
+    {
+      "date": "Sep 2025",
+      "rival": "Eslovenia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 2,
+      "result": "draw"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Kosovo",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 0,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Suiza",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 0,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Kosovo",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Suiza",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 1,
+      "goals_conceded": 4,
+      "result": "loss"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Eslovenia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Ucrania",
+      "competition": "Play-off UEFA",
+      "goals_scored": 3,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Polonia",
+      "competition": "Play-off UEFA",
+      "goals_scored": 3,
+      "goals_conceded": 2,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Noruega",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 3,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Grecia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 2,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Argelia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Túnez",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 5,
+      "goals_conceded": 1,
+      "result": "win"
+    }
+  ],
+  "Noruega": [
+    {
+      "date": "Mar 2025",
+      "rival": "Moldavia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 5,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2025",
+      "rival": "Israel",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 4,
+      "goals_conceded": 2,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2025",
+      "rival": "Italia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2025",
+      "rival": "Estonia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Moldavia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 11,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Israel",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 5,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Estonia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 4,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Italia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 4,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Países Bajos",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Suiza",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Suecia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 3,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Marruecos",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    }
+  ],
+  "República Checa": [
+    {
+      "date": "Mar 2025",
+      "rival": "I. Feroe",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2025",
+      "rival": "Gibraltar",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 4,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2025",
+      "rival": "Montenegro",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2025",
+      "rival": "Croacia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 1,
+      "goals_conceded": 5,
+      "result": "loss"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Montenegro",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Croacia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "I. Feroe",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Gibraltar",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 6,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Irlanda",
+      "competition": "Play-off UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 2,
+      "result": "draw"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Dinamarca",
+      "competition": "Play-off UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 2,
+      "result": "draw"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Kosovo",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Guatemala",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 3,
+      "goals_conceded": 1,
+      "result": "win"
+    }
+  ],
+  "Turquía": [
+    {
+      "date": "Sep 2025",
+      "rival": "Georgia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "España",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 0,
+      "goals_conceded": 6,
+      "result": "loss"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Bulgaria",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Georgia",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Bulgaria",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "España",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 2,
+      "result": "draw"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Rumanía",
+      "competition": "Play-off UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Eslovaquia",
+      "competition": "Play-off UEFA",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Irán",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Macedonia N.",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "México",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Australia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 2,
+      "result": "loss"
+    }
+  ],
+  "Austria": [
+    {
+      "date": "Mar 2025",
+      "rival": "Rumanía",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2025",
+      "rival": "Chipre",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2025",
+      "rival": "San Marino",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 5,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "San Marino",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 7,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Bosnia y Herz.",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Chipre",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Rumanía",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Bosnia y Herz.",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Corea del Sur",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Islandia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Túnez",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Bahréin",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    }
+  ],
+  "Bosnia y Herzegovina": [
+    {
+      "date": "Mar 2025",
+      "rival": "Rumanía",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2025",
+      "rival": "Chipre",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2025",
+      "rival": "San Marino",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "San Marino",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 6,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Austria",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Chipre",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 2,
+      "goals_conceded": 2,
+      "result": "draw"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Rumanía",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 3,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Austria",
+      "competition": "Eliminatorias UEFA",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Gales",
+      "competition": "Play-off UEFA",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Italia",
+      "competition": "Play-off UEFA",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Macedonia N.",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Canadá",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    }
+  ],
+  "Marruecos": [
+    {
+      "date": "Oct 2025",
+      "rival": "Bahréin",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Mozambique",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Uganda",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 4,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Comoras",
+      "competition": "AFCON 2025",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Malí",
+      "competition": "AFCON 2025",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Zambia",
+      "competition": "AFCON 2025",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Tanzania",
+      "competition": "AFCON 2025",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Camerún",
+      "competition": "AFCON 2025",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Nigeria",
+      "competition": "AFCON 2025",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Senegal",
+      "competition": "AFCON 2025",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Paraguay",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Namibia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 5,
+      "goals_conceded": 0,
+      "result": "win"
+    }
+  ],
+  "Senegal": [
+    {
+      "date": "Dic 2025",
+      "rival": "Botsuana",
+      "competition": "AFCON 2025",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "RD Congo",
+      "competition": "AFCON 2025",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Benín",
+      "competition": "AFCON 2025",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Sudán",
+      "competition": "AFCON 2025",
+      "goals_scored": 3,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Malí",
+      "competition": "AFCON 2025",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Egipto",
+      "competition": "AFCON 2025",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Marruecos",
+      "competition": "AFCON 2025",
+      "goals_scored": 0,
+      "goals_conceded": 3,
+      "result": "loss"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Perú",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Gambia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 3,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Estados Unidos",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 3,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Arabia Saudita",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Panamá",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 2,
+      "result": "loss"
+    }
+  ],
+  "Egipto": [
+    {
+      "date": "Nov 2025",
+      "rival": "Uzbekistán",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Cabo Verde",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Nigeria",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Zimbabue",
+      "competition": "AFCON 2025",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Sudáfrica",
+      "competition": "AFCON 2025",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Angola",
+      "competition": "AFCON 2025",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Benín",
+      "competition": "AFCON 2025",
+      "goals_scored": 3,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "C. de Marfil",
+      "competition": "AFCON 2025",
+      "goals_scored": 3,
+      "goals_conceded": 2,
+      "result": "win"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Senegal",
+      "competition": "AFCON 2025",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Nigeria",
+      "competition": "AFCON 2025",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Arabia Saudita",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 4,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "España",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    }
+  ],
+  "Costa de Marfil": [
+    {
+      "date": "Nov 2025",
+      "rival": "Arabia Saudita",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Omán",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Mozambique",
+      "competition": "AFCON 2025",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Camerún",
+      "competition": "AFCON 2025",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Gabón",
+      "competition": "AFCON 2025",
+      "goals_scored": 3,
+      "goals_conceded": 2,
+      "result": "win"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Burkina Faso",
+      "competition": "AFCON 2025",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Egipto",
+      "competition": "AFCON 2025",
+      "goals_scored": 2,
+      "goals_conceded": 3,
+      "result": "loss"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Corea del Sur",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 4,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Escocia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Francia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Ecuador",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Bolivia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    }
+  ],
+  "Cabo Verde": [
+    {
+      "date": "May 2025",
+      "rival": "Malasia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2025",
+      "rival": "Georgia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Irán",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Egipto",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Nigeria",
+      "competition": "AFCON 2025",
+      "goals_scored": 0,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Túnez",
+      "competition": "AFCON 2025",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Guinea",
+      "competition": "AFCON 2025",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Camerún",
+      "competition": "AFCON 2025",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Perú",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Serbia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Bermudas",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "España",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    }
+  ],
+  "Túnez": [
+    {
+      "date": "Sep 2025",
+      "rival": "Egipto",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Egipto",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 3,
+      "result": "loss"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Mauritania",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Jordania",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 3,
+      "goals_conceded": 2,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Brasil",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Uganda",
+      "competition": "AFCON 2025",
+      "goals_scored": 3,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Nigeria",
+      "competition": "AFCON 2025",
+      "goals_scored": 2,
+      "goals_conceded": 3,
+      "result": "loss"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Tanzania",
+      "competition": "AFCON 2025",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Malí",
+      "competition": "AFCON 2025",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Haití",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Austria",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Suecia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 5,
+      "result": "loss"
+    }
+  ],
+  "RD Congo": [
+    {
+      "date": "Jun 2025",
+      "rival": "Malí",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2025",
+      "rival": "Madagascar",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 3,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Zambia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Benín",
+      "competition": "AFCON 2025",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Senegal",
+      "competition": "AFCON 2025",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Botsuana",
+      "competition": "AFCON 2025",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Argelia",
+      "competition": "AFCON 2025",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Nueva Caledonia",
+      "competition": "Play-off Intercontinental",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Jamaica",
+      "competition": "Play-off Intercontinental",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Panamá",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Dinamarca",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Chile",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    }
+  ],
+  "Sudáfrica": [
+    {
+      "date": "Jun 2025",
+      "rival": "Tanzania",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Zambia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 3,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Ghana A'",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Angola",
+      "competition": "AFCON 2025",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Egipto",
+      "competition": "AFCON 2025",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Zimbabue",
+      "competition": "AFCON 2025",
+      "goals_scored": 3,
+      "goals_conceded": 2,
+      "result": "win"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Camerún",
+      "competition": "AFCON 2025",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Panamá",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Panamá",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Nicaragua",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Jamaica",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "México",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 2,
+      "result": "loss"
+    }
+  ],
+  "Argelia": [
+    {
+      "date": "Sep 2025",
+      "rival": "Uganda",
+      "competition": "Eliminatorias CAF",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Mozambique",
+      "competition": "Eliminatorias CAF",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Guinea",
+      "competition": "Eliminatorias CAF",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Arabia Saudita",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Burkina Faso",
+      "competition": "AFCON 2025",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Mauricio",
+      "competition": "AFCON 2025",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Angola",
+      "competition": "AFCON 2025",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "RD Congo",
+      "competition": "AFCON 2025",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Marruecos",
+      "competition": "AFCON 2025",
+      "goals_scored": 0,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Uruguay",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Países Bajos",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Suecia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    }
+  ],
+  "Ghana": [
+    {
+      "date": "Sep 2025",
+      "rival": "Madagascar",
+      "competition": "Eliminatorias CAF",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Comoras",
+      "competition": "Eliminatorias CAF",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Malí",
+      "competition": "Eliminatorias CAF",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Corea del Sur",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Egipto",
+      "competition": "AFCON 2025",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Dic 2025",
+      "rival": "Guinea",
+      "competition": "AFCON 2025",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Gambia",
+      "competition": "AFCON 2025",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Senegal",
+      "competition": "AFCON 2025",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Alemania",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "May 2026",
+      "rival": "México",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Paraguay",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Gales",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    }
+  ],
+  "Japón": [
+    {
+      "date": "Sep 2025",
+      "rival": "México",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Estados Unidos",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Paraguay",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 2,
+      "result": "draw"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Brasil",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 3,
+      "goals_conceded": 2,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Ghana",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Bolivia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Escocia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Inglaterra",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Islandia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Alemania",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Ecuador",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Países Bajos",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 2,
+      "result": "draw"
+    }
+  ],
+  "Corea del Sur": [
+    {
+      "date": "Sep 2025",
+      "rival": "Estados Unidos",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "México",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 2,
+      "result": "draw"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Brasil",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 5,
+      "result": "loss"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Paraguay",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Bolivia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Ghana",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Costa de Marfil",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 4,
+      "result": "loss"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Austria",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Trinidad y Tobago",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 5,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "El Salvador",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Rep. Checa",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "España",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    }
+  ],
+  "Australia": [
+    {
+      "date": "Sep 2025",
+      "rival": "Nueva Zelanda",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Nueva Zelanda",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 3,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Canadá",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Estados Unidos",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Venezuela",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Colombia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 3,
+      "result": "loss"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Siria",
+      "competition": "Eliminatorias AFC",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Bahréin",
+      "competition": "Eliminatorias AFC",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Portugal",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 3,
+      "result": "loss"
+    },
+    {
+      "date": "May 2026",
+      "rival": "México",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Suiza",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Turquía",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    }
+  ],
+  "Irán": [
+    {
+      "date": "Oct 2025",
+      "rival": "Rusia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Cabo Verde",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Uzbekistán",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "EAU",
+      "competition": "Eliminatorias AFC",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Qatar",
+      "competition": "Eliminatorias AFC",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Nigeria",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Costa Rica",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 5,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Turquía",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Gambia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 3,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Malí",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Nueva Zelanda",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 2,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Omán",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    }
+  ],
+  "Arabia Saudita": [
+    {
+      "date": "May 2025",
+      "rival": "Jordania",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Macedonia N.",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Rep. Checa",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Costa de Marfil",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Argelia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Egipto",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 4,
+      "result": "loss"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Serbia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Ecuador",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Puerto Rico",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Senegal",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Uruguay",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Venezuela",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    }
+  ],
+  "Qatar": [
+    {
+      "date": "Ago 2025",
+      "rival": "Líbano",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Bahréin",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 2,
+      "result": "draw"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Rusia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 4,
+      "result": "loss"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Zimbabue",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Kuwait",
+      "competition": "Eliminatorias AFC",
+      "goals_scored": 3,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Irán",
+      "competition": "Eliminatorias AFC",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Serbia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Sudán",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Irlanda",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "El Salvador",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Portugal",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 4,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Suiza",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    }
+  ],
+  "Uzbekistán": [
+    {
+      "date": "Ene 2025",
+      "rival": "Jordania",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Kuwait",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Uruguay",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Egipto",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Irán",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "EAU",
+      "competition": "Eliminatorias AFC",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Siria",
+      "competition": "Eliminatorias AFC",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Omán",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "China",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Canadá",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Países Bajos",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Tailandia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    }
+  ],
+  "Jordania": [
+    {
+      "date": "Ene 2025",
+      "rival": "Uzbekistán",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "May 2025",
+      "rival": "Arabia Saudita",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Omán",
+      "competition": "Eliminatorias AFC",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Irak",
+      "competition": "Eliminatorias AFC",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Túnez",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 3,
+      "result": "loss"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Bahréin",
+      "competition": "Eliminatorias AFC",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Kuwait",
+      "competition": "Eliminatorias AFC",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Líbano",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Siria",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Suiza",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 4,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Colombia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Nueva Zelanda",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    }
+  ],
+  "Irak": [
+    {
+      "date": "Sep 2025",
+      "rival": "Corea del Sur",
+      "competition": "Eliminatorias AFC",
+      "goals_scored": 0,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Jordania",
+      "competition": "Eliminatorias AFC",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Bahréin",
+      "competition": "Eliminatorias AFC",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "Omán",
+      "competition": "Eliminatorias AFC",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Ene 2026",
+      "rival": "China",
+      "competition": "Eliminatorias AFC",
+      "goals_scored": 3,
+      "goals_conceded": 1,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Bolivia/Surinam",
+      "competition": "Play-off Intercontinental",
+      "goals_scored": 2,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "N. Caledonia",
+      "competition": "Play-off Intercontinental",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Andorra",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "España",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Suecia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Austria",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Gales",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 1,
+      "result": "win"
+    }
+  ],
+  "Nueva Zelanda": [
+    {
+      "date": "Mar 2025",
+      "rival": "N. Caledonia",
+      "competition": "Eliminatorias OFC",
+      "goals_scored": 3,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Australia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Sep 2025",
+      "rival": "Australia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 3,
+      "result": "loss"
+    },
+    {
+      "date": "Oct 2025",
+      "rival": "Tahití",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 5,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Colombia",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 1,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Nov 2025",
+      "rival": "Ecuador",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 0,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Mar 2026",
+      "rival": "Fiyi",
+      "competition": "Amistoso Internacional",
+      "goals_scored": 4,
+      "goals_conceded": 0,
+      "result": "win"
+    },
+    {
+      "date": "May 2026",
+      "rival": "Haití",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 0,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Inglaterra",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 1,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Escocia",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 0,
+      "goals_conceded": 2,
+      "result": "loss"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Jordania",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 1,
+      "goals_conceded": 1,
+      "result": "draw"
+    },
+    {
+      "date": "Jun 2026",
+      "rival": "Irán",
+      "competition": "Amistoso de Preparación",
+      "goals_scored": 2,
+      "goals_conceded": 2,
+      "result": "draw"
+    }
+  ]
+}
