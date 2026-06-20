@@ -4,7 +4,7 @@ from features.matches.services import get_last_matches, get_h2h
 
 from features.predictions.services import random_poisson
 
-def get_most_probable_score(team_a, team_b):
+def get_most_probable_score(team_a, team_b, stochastic=False):
     ranks = get_fifa_ranking()
     rank_a = ranks.get(team_a, {"rank": 50, "points": 1400})
     rank_b = ranks.get(team_b, {"rank": 50, "points": 1400})
@@ -15,10 +15,14 @@ def get_most_probable_score(team_a, team_b):
 
     xg_a, xg_b = calculate_xg(rank_a, rank_b, stats_a, stats_b, h2h)
     
-    # Use stochastic Poisson sampling for realistic varied results
-    score_a = random_poisson(xg_a)
-    score_b = random_poisson(xg_b)
-    
+    if stochastic:
+        score_a = random_poisson(xg_a)
+        score_b = random_poisson(xg_b)
+    else:
+        matrix = generate_probability_matrix(xg_a, xg_b)
+        score_a = matrix[0]["score_a"]
+        score_b = matrix[0]["score_b"]
+        
     return score_a, score_b
 
 def recalculate_groups(matches, groups):
@@ -219,7 +223,7 @@ def propagate_bracket(bracket):
 
     return bracket
 
-def run_full_simulation(state):
+def run_full_simulation(state, stochastic=False):
     matches = state.get("matches", [])
     groups = state.get("groups", [])
     bracket = state.get("bracket", {})
@@ -227,7 +231,7 @@ def run_full_simulation(state):
     # 1. Simulate remaining group matches
     for m in matches:
         if m["score_a"] is None or m["score_b"] is None:
-            sa, sb = get_most_probable_score(m["team_a"], m["team_b"])
+            sa, sb = get_most_probable_score(m["team_a"], m["team_b"], stochastic=stochastic)
             m["score_a"] = sa
             m["score_b"] = sb
             m["status"] = "Simulado"
@@ -243,7 +247,7 @@ def run_full_simulation(state):
             if is_tbd(m["team_a"]) or is_tbd(m["team_b"]):
                 continue
             if m["score_a"] is None or m["score_b"] is None:
-                sa, sb = get_most_probable_score(m["team_a"], m["team_b"])
+                sa, sb = get_most_probable_score(m["team_a"], m["team_b"], stochastic=stochastic)
                 m["score_a"] = sa
                 m["score_b"] = sb
                 
@@ -364,7 +368,7 @@ def run_simulation_of_simulations(state, count=250):
     try:
         for _ in range(count):
             state_copy = fast_copy_state(state)
-            simed = run_full_simulation(state_copy)
+            simed = run_full_simulation(state_copy, stochastic=True)
             
             gran_final = simed["bracket"]["final"][0] if simed["bracket"]["final"] else None
             semis = simed["bracket"]["semis"]
