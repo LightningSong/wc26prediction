@@ -76,6 +76,15 @@ def update_bracket_from_groups(groups, bracket, matches):
         if not group: return False
         return all(t["pj"] == 3 for t in group["teams"])
 
+    CONFIRMED_QUALIFIED_TEAMS = {"Alemania", "Estados Unidos", "México", "Argentina"}
+
+    def is_team_qualified(team_data, group_name):
+        if not team_data: return False
+        if is_group_complete(group_name): return True
+        if team_data.get("pts", 0) >= 6: return True
+        if team_data.get("name") in CONFIRMED_QUALIFIED_TEAMS: return True
+        return False
+
     third_place_teams = []
     for group in groups:
         team = group["teams"][2]
@@ -88,15 +97,17 @@ def update_bracket_from_groups(groups, bracket, matches):
     def get_team_info(type_val, key):
         if type_val == '3rd':
             rank_idx = int(key)
-            if rank_idx < len(sorted_thirds) and sorted_thirds[rank_idx]["isGroupComplete"]:
+            if rank_idx < len(sorted_thirds) and (sorted_thirds[rank_idx]["isGroupComplete"] or is_team_qualified(sorted_thirds[rank_idx], sorted_thirds[rank_idx]["groupName"])):
                 return {"name": sorted_thirds[rank_idx]["name"], "flag": sorted_thirds[rank_idx]["flag"]}
             return {"name": f"3° Mejor #{rank_idx + 1}", "flag": "un"}
         else:
             group_name = f"Grupo {key}"
             group = next((g for g in groups if g["name"] == group_name), None)
-            if group and is_group_complete(group_name):
+            if group:
                 idx = 0 if type_val == '1' else 1
-                return {"name": group["teams"][idx]["name"], "flag": group["teams"][idx]["flag"]}
+                candidate_team = group["teams"][idx]
+                if is_team_qualified(candidate_team, group_name):
+                    return {"name": candidate_team["name"], "flag": candidate_team["flag"]}
             return {"name": f"{type_val}° {group_name}", "flag": "un"}
 
     r32_mapping = [
@@ -120,6 +131,8 @@ def update_bracket_from_groups(groups, bracket, matches):
 
     for i, m in enumerate(bracket["round_of_32"]):
         if i >= len(r32_mapping): break
+        if m.get("score_a") is not None and m.get("score_b") is not None:
+            continue
         map_info = r32_mapping[i]
         team_a = get_team_info(map_info["a"]["type"], map_info["a"]["key"])
         team_b = get_team_info(map_info["b"]["type"], map_info["b"]["key"])
@@ -151,6 +164,9 @@ def propagate_bracket(bracket):
             next_match = next((nm for nm in bracket[next_round_key] if nm["id"] == next_match_id), None)
             if not next_match: continue
             
+            if next_match.get("score_a") is not None and next_match.get("score_b") is not None:
+                continue
+
             winner_name = "A definir"
             winner_flag = "un"
             
@@ -212,14 +228,17 @@ def propagate_bracket(bracket):
         w1, wf1, l1, lf1 = get_winner_loser(sf1)
         w2, wf2, l2, lf2 = get_winner_loser(sf2)
         
-        if gran_final["team_a"] != w1:
-            gran_final["team_a"] = w1; gran_final["flag_a"] = wf1; gran_final["score_a"] = None; gran_final["score_b"] = None; gran_final["penalty_winner"] = None
-        if gran_final["team_b"] != w2:
-            gran_final["team_b"] = w2; gran_final["flag_b"] = wf2; gran_final["score_a"] = None; gran_final["score_b"] = None; gran_final["penalty_winner"] = None
-        if third_place["team_a"] != l1:
-            third_place["team_a"] = l1; third_place["flag_a"] = lf1; third_place["score_a"] = None; third_place["score_b"] = None; third_place["penalty_winner"] = None
-        if third_place["team_b"] != l2:
-            third_place["team_b"] = l2; third_place["flag_b"] = lf2; third_place["score_a"] = None; third_place["score_b"] = None; third_place["penalty_winner"] = None
+        if gran_final.get("score_a") is None or gran_final.get("score_b") is None:
+            if gran_final["team_a"] != w1:
+                gran_final["team_a"] = w1; gran_final["flag_a"] = wf1; gran_final["score_a"] = None; gran_final["score_b"] = None; gran_final["penalty_winner"] = None
+            if gran_final["team_b"] != w2:
+                gran_final["team_b"] = w2; gran_final["flag_b"] = wf2; gran_final["score_a"] = None; gran_final["score_b"] = None; gran_final["penalty_winner"] = None
+                
+        if third_place.get("score_a") is None or third_place.get("score_b") is None:
+            if third_place["team_a"] != l1:
+                third_place["team_a"] = l1; third_place["flag_a"] = lf1; third_place["score_a"] = None; third_place["score_b"] = None; third_place["penalty_winner"] = None
+            if third_place["team_b"] != l2:
+                third_place["team_b"] = l2; third_place["flag_b"] = lf2; third_place["score_a"] = None; third_place["score_b"] = None; third_place["penalty_winner"] = None
 
     return bracket
 

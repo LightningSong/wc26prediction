@@ -116,6 +116,10 @@ export default function TournamentDashboard() {
         const nextMatch = newBracket[nextRoundKey].find((nm: any) => nm.id === nextMatchId);
         if (!nextMatch) return;
         
+        if (nextMatch.score_a !== null && nextMatch.score_b !== null) {
+          return;
+        }
+
         let winnerName = "A definir";
         let winnerFlag = "un";
         
@@ -196,11 +200,15 @@ export default function TournamentDashboard() {
       const res1 = getMatchWinnerAndLoser(sf1);
       const res2 = getMatchWinnerAndLoser(sf2);
       
-      if (granFinal.team_a !== res1.winner) { granFinal.team_a = res1.winner; granFinal.flag_a = res1.wFlag; granFinal.score_a = null; granFinal.score_b = null; granFinal.penalty_winner = null; }
-      if (granFinal.team_b !== res2.winner) { granFinal.team_b = res2.winner; granFinal.flag_b = res2.wFlag; granFinal.score_a = null; granFinal.score_b = null; granFinal.penalty_winner = null; }
+      if (granFinal.score_a === null || granFinal.score_b === null) {
+        if (granFinal.team_a !== res1.winner) { granFinal.team_a = res1.winner; granFinal.flag_a = res1.wFlag; granFinal.score_a = null; granFinal.score_b = null; granFinal.penalty_winner = null; }
+        if (granFinal.team_b !== res2.winner) { granFinal.team_b = res2.winner; granFinal.flag_b = res2.wFlag; granFinal.score_a = null; granFinal.score_b = null; granFinal.penalty_winner = null; }
+      }
       
-      if (thirdPlace.team_a !== res1.loser) { thirdPlace.team_a = res1.loser; thirdPlace.flag_a = res1.lFlag; thirdPlace.score_a = null; thirdPlace.score_b = null; thirdPlace.penalty_winner = null; }
-      if (thirdPlace.team_b !== res2.loser) { thirdPlace.team_b = res2.loser; thirdPlace.flag_b = res2.lFlag; thirdPlace.score_a = null; thirdPlace.score_b = null; thirdPlace.penalty_winner = null; }
+      if (thirdPlace.score_a === null || thirdPlace.score_b === null) {
+        if (thirdPlace.team_a !== res1.loser) { thirdPlace.team_a = res1.loser; thirdPlace.flag_a = res1.lFlag; thirdPlace.score_a = null; thirdPlace.score_b = null; thirdPlace.penalty_winner = null; }
+        if (thirdPlace.team_b !== res2.loser) { thirdPlace.team_b = res2.loser; thirdPlace.flag_b = res2.lFlag; thirdPlace.score_a = null; thirdPlace.score_b = null; thirdPlace.penalty_winner = null; }
+      }
     }
     
     return newBracket;
@@ -215,6 +223,16 @@ export default function TournamentDashboard() {
       const group = currentGroups.find(g => g.name === groupName);
       if (!group) return false;
       return group.teams.every((t: any) => t.pj === 3);
+    };
+
+    const CONFIRMED_QUALIFIED_TEAMS = new Set(["Alemania", "Estados Unidos", "México", "Argentina"]);
+
+    const isTeamQualified = (team: any, groupName: string) => {
+      if (!team) return false;
+      if (isGroupComplete(groupName)) return true;
+      if (team.pts >= 6) return true;
+      if (CONFIRMED_QUALIFIED_TEAMS.has(team.name)) return true;
+      return false;
     };
 
     const thirdPlaceTeams = currentGroups.map((group: any) => {
@@ -241,16 +259,19 @@ export default function TournamentDashboard() {
       if (type === '3rd') {
         const rankIdx = parseInt(groupCharOrRank, 10);
         const candidate = sortedThirds[rankIdx];
-        if (candidate && candidate.isGroupComplete) {
+        if (candidate && (candidate.isGroupComplete || isTeamQualified(candidate, candidate.groupName))) {
           return { name: candidate.name, flag: candidate.flag };
         }
         return { name: getThirdPlacePlaceholder(rankIdx), flag: 'un' };
       } else {
         const groupName = `Grupo ${groupCharOrRank}`;
         const group = currentGroups.find(g => g.name === groupName);
-        if (group && isGroupComplete(groupName)) {
+        if (group) {
           const idx = type === '1' ? 0 : 1;
-          return { name: group.teams[idx].name, flag: group.teams[idx].flag };
+          const candidate = group.teams[idx];
+          if (candidate && isTeamQualified(candidate, groupName)) {
+            return { name: candidate.name, flag: candidate.flag };
+          }
         }
         return { name: `${type}° ${groupName}`, flag: 'un' };
       }
@@ -276,6 +297,9 @@ export default function TournamentDashboard() {
     ];
 
     newBracket.round_of_32 = newBracket.round_of_32.map((m: any, idx: number) => {
+      if (m.score_a !== null && m.score_b !== null) {
+        return m;
+      }
       const map = r32Mapping[idx];
       if (!map) return m;
       const teamA = getTeamInfo(map.a.type as any, map.a.key);
