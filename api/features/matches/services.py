@@ -26,7 +26,7 @@ def get_matches_for_today():
     
     formatted_matches = []
     now = datetime.now(timezone.utc)
-    local_tz = datetime.now().astimezone().tzinfo
+    local_tz = timezone(timedelta(hours=-5)) # Lima, Peru timezone (UTC-5)
     
     for m in raw_matches:
         match_date = m["date"]
