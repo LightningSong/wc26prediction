@@ -134,6 +134,30 @@ export default function TopNav({ activeTab, onTabChange, matches = [] }: TopNavP
             </div>
           </div>
         </div>
+        {/* Mobile Navigation Tabs */}
+        <div className="md:hidden border-t border-outline-variant/30 overflow-x-auto scrollbar-none bg-surface-container-lowest">
+          <div className="flex px-4 justify-between gap-1 whitespace-nowrap">
+            {[
+              { id: 'grupos', label: 'Grupos' },
+              { id: 'partidos', label: 'Partidos' },
+              { id: 'fase', label: 'Eliminatorias' },
+              { id: 'estadios', label: 'Estadios' },
+              { id: 'pred', label: 'Predicciones' }
+            ].map(tab => (
+              <button
+                key={tab.id}
+                onClick={() => onTabChange(tab.id)}
+                className={`px-2 py-3 text-sm font-semibold transition-colors border-b-2 ${
+                  activeTab === tab.id 
+                    ? 'text-primary border-primary font-bold' 
+                    : 'text-on-surface-variant border-transparent'
+                }`}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
+        </div>
       </header>
     </>
   );
