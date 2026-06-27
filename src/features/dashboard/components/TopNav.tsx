@@ -109,7 +109,7 @@ export default function TopNav({ activeTab, onTabChange, matches = [] }: TopNavP
               {[
                 { id: 'grupos', label: 'Grupos' },
                 { id: 'partidos', label: 'Partidos' },
-                { id: 'fase', label: 'Fase Final' },
+                { id: 'fase', label: 'Eliminatorias' },
                 { id: 'estadios', label: 'Estadios' },
                 { id: 'pred', label: 'Predicciones' }
               ].map(tab => (

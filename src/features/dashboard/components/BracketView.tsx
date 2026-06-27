@@ -465,7 +465,7 @@ export default function BracketView({ bracket, onAdvanceTeam, onBracketScoreChan
       <div className="fixed inset-0 z-[100] bg-surface-container-lowest overflow-hidden flex flex-col transition-all duration-500">
         <div className="w-full px-2 md:px-6 py-4 flex flex-col h-full max-h-screen">
           <div className="flex items-center justify-between mb-4 shrink-0">
-            <h2 className="font-bebas text-4xl text-primary leading-none uppercase">Árbol de Fase Final</h2>
+            <h2 className="font-bebas text-4xl text-primary leading-none uppercase">Árbol de Eliminatorias</h2>
             <button 
               onClick={() => setIsFullscreen(false)}
               className="bg-surface-container hover:bg-surface-container-high border border-outline-variant text-on-surface-variant px-4 py-2 rounded-lg shadow-sm transition-all text-xs font-bold uppercase tracking-widest flex items-center gap-2 z-50"
@@ -486,7 +486,7 @@ export default function BracketView({ bracket, onAdvanceTeam, onBracketScoreChan
   return (
     <section className="space-y-10">
       <div className="text-center max-w-2xl mx-auto">
-        <h2 className="font-bebas text-5xl text-primary leading-none uppercase">Fase Final</h2>
+        <h2 className="font-bebas text-5xl text-primary leading-none uppercase">Eliminatorias</h2>
         <p className="text-on-surface-variant text-sm mt-1">Simulación interactiva hacia el campeonato en Nueva York</p>
       </div>
       {content}
