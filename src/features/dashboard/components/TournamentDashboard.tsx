@@ -7,7 +7,7 @@ import TournamentBracket from "@/features/simulations/components/TournamentBrack
 import PredictionPanel from "@/features/predictions/components/PredictionPanel";
 import gsap from "gsap";
 
-const LOCAL_STORAGE_KEY = "wc26_tournament_state_v7";
+const LOCAL_STORAGE_KEY = "wc26_tournament_state_v9";
 
 export default function TournamentDashboard() {
   const [activeTab, setActiveTab] = useState("grupos");

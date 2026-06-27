@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 
-const LOCAL_STORAGE_KEY = "wc26_tournament_state_v8";
+const LOCAL_STORAGE_KEY = "wc26_tournament_state_v9";
 
 export function useTournament() {
   const [matchesData, setMatchesData] = useState<any[]>([]);
