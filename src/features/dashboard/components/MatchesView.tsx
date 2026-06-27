@@ -11,9 +11,7 @@ export default function MatchesView({ matches, onScoreChange, onMatchSelect, sel
   const [filter, setFilter] = React.useState('all');
 
   const filteredMatches = filter === 'all' 
-    ? [...matches].sort((a, b) => {
-        return new Date(a.date).getTime() - new Date(b.date).getTime();
-      })
+    ? [...matches]
     : matches.filter(m => filter === 'finished' ? m.status?.includes('Finalizado') || m.status?.includes('Simulado') : m.status?.includes('vivo'));
   
   const byD: Record<string, typeof matches> = {};
