@@ -1,5 +1,14 @@
 import React from 'react';
 
+const getMatchTime = (dateStr: string) => {
+  try {
+    const d = new Date(dateStr);
+    return d.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
+  } catch (e) {
+    return "";
+  }
+};
+
 interface MatchesViewProps {
   matches: any[];
   onScoreChange: (matchId: string, team: 'a' | 'b', value: string) => void;
@@ -127,6 +136,7 @@ export default function MatchesView({ matches, onScoreChange, onMatchSelect, sel
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                 {ms.map((m) => {
+                  const isHoyOrManana = date === "HOY" || date === "🔴 EN VIVO" || date === "MAÑANA";
                   const live = m.status?.includes('vivo');
                   const finished = m.status?.includes('Finalizado') || m.status?.includes('Simulado');
                   const isSelected = selectedMatchId === m.id;
@@ -167,21 +177,29 @@ export default function MatchesView({ matches, onScoreChange, onMatchSelect, sel
 
                       {/* Status footer */}
                       <div className="mt-4 pt-3 border-t border-outline-variant/30 flex items-center justify-between">
-                        {live ? (
-                          <span className="text-[10px] bg-error text-white px-2 py-0.5 rounded font-black animate-pulse-soft">
-                            EN VIVO
-                          </span>
-                        ) : finished ? (
-                          <span className="text-[10px] bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded font-bold uppercase">
-                            {m.status}
-                          </span>
-                        ) : (
-                          <span className="text-[10px] text-on-primary-container/40 uppercase font-bold">
-                            {m.time}
-                          </span>
-                        )}
+                        <div className="flex items-center gap-2">
+                          {live ? (
+                            <span className="text-[10px] bg-error text-white px-2 py-0.5 rounded font-black animate-pulse-soft">
+                              EN VIVO
+                            </span>
+                          ) : finished ? (
+                            <span className="text-[10px] bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded font-bold uppercase">
+                              {isHoyOrManana ? "Finalizado" : m.status}
+                            </span>
+                          ) : (
+                            <span className="text-[10px] text-on-primary-container/40 uppercase font-bold">
+                              {isHoyOrManana ? "Próximamente" : m.status}
+                            </span>
+                          )}
+                          
+                          {isHoyOrManana && (
+                            <span className="text-[10px] bg-primary/10 text-primary border border-primary/20 px-2 py-0.5 rounded font-black">
+                              {getMatchTime(m.date)}
+                            </span>
+                          )}
+                        </div>
                         <span className="text-[10px] font-bold text-on-surface-variant uppercase truncate max-w-[120px]">
-                          {m.venue}
+                          {m.stadium || m.venue}
                         </span>
                       </div>
                     </div>
