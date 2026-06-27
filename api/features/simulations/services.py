@@ -111,22 +111,22 @@ def update_bracket_from_groups(groups, bracket, matches):
             return {"name": f"{type_val}° {group_name}", "flag": "un"}
 
     r32_mapping = [
-        {"a": {"type": '1', "key": 'A'}, "b": {"type": '3rd', "key": '0'}},
-        {"a": {"type": '2', "key": 'A'}, "b": {"type": '2', "key": 'B'}},
-        {"a": {"type": '1', "key": 'B'}, "b": {"type": '3rd', "key": '1'}},
-        {"a": {"type": '1', "key": 'C'}, "b": {"type": '2', "key": 'F'}},
-        {"a": {"type": '1', "key": 'D'}, "b": {"type": '3rd', "key": '2'}},
-        {"a": {"type": '1', "key": 'E'}, "b": {"type": '2', "key": 'D'}},
-        {"a": {"type": '1', "key": 'F'}, "b": {"type": '2', "key": 'E'}},
-        {"a": {"type": '2', "key": 'C'}, "b": {"type": '2', "key": 'H'}},
-        {"a": {"type": '1', "key": 'G'}, "b": {"type": '3rd', "key": '3'}},
-        {"a": {"type": '1', "key": 'H'}, "b": {"type": '2', "key": 'G'}},
-        {"a": {"type": '1', "key": 'I'}, "b": {"type": '3rd', "key": '4'}},
-        {"a": {"type": '1', "key": 'J'}, "b": {"type": '2', "key": 'I'}},
-        {"a": {"type": '1', "key": 'K'}, "b": {"type": '3rd', "key": '5'}},
-        {"a": {"type": '2', "key": 'J'}, "b": {"type": '2', "key": 'K'}},
-        {"a": {"type": '1', "key": 'L'}, "b": {"type": '3rd', "key": '6'}},
-        {"a": {"type": '2', "key": 'L'}, "b": {"type": '3rd', "key": '7'}},
+        {"a": {"type": '1', "key": 'E'}, "b": {"type": '3rd', "key": '0'}}, # M74
+        {"a": {"type": '1', "key": 'I'}, "b": {"type": '3rd', "key": '1'}}, # M77
+        {"a": {"type": '2', "key": 'A'}, "b": {"type": '2', "key": 'B'}},   # M73
+        {"a": {"type": '1', "key": 'F'}, "b": {"type": '2', "key": 'C'}},   # M75
+        {"a": {"type": '1', "key": 'C'}, "b": {"type": '2', "key": 'F'}},   # M76
+        {"a": {"type": '2', "key": 'E'}, "b": {"type": '2', "key": 'I'}},   # M78
+        {"a": {"type": '1', "key": 'A'}, "b": {"type": '3rd', "key": '2'}}, # M79
+        {"a": {"type": '1', "key": 'L'}, "b": {"type": '3rd', "key": '3'}}, # M80
+        {"a": {"type": '2', "key": 'K'}, "b": {"type": '2', "key": 'L'}},   # M83
+        {"a": {"type": '1', "key": 'H'}, "b": {"type": '2', "key": 'J'}},   # M84
+        {"a": {"type": '1', "key": 'D'}, "b": {"type": '3rd', "key": '4'}}, # M81
+        {"a": {"type": '1', "key": 'G'}, "b": {"type": '3rd', "key": '5'}}, # M82
+        {"a": {"type": '1', "key": 'J'}, "b": {"type": '2', "key": 'H'}},   # M86
+        {"a": {"type": '2', "key": 'D'}, "b": {"type": '2', "key": 'G'}},   # M88
+        {"a": {"type": '1', "key": 'B'}, "b": {"type": '3rd', "key": '6'}}, # M85
+        {"a": {"type": '1', "key": 'K'}, "b": {"type": '3rd', "key": '7'}}, # M87
     ]
 
     for i, m in enumerate(bracket["round_of_32"]):

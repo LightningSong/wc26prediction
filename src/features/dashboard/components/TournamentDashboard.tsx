@@ -278,22 +278,22 @@ export default function TournamentDashboard() {
     };
 
     const r32Mapping = [
-      { a: { type: '1', key: 'A' }, b: { type: '3rd', key: '0' } }, // Match 1
-      { a: { type: '2', key: 'A' }, b: { type: '2', key: 'B' } },   // Match 2
-      { a: { type: '1', key: 'B' }, b: { type: '3rd', key: '1' } }, // Match 3
-      { a: { type: '1', key: 'C' }, b: { type: '2', key: 'F' } },   // Match 4
-      { a: { type: '1', key: 'D' }, b: { type: '3rd', key: '2' } }, // Match 5
-      { a: { type: '1', key: 'E' }, b: { type: '2', key: 'D' } },   // Match 6
-      { a: { type: '1', key: 'F' }, b: { type: '2', key: 'E' } },   // Match 7
-      { a: { type: '2', key: 'C' }, b: { type: '2', key: 'H' } },   // Match 8
-      { a: { type: '1', key: 'G' }, b: { type: '3rd', key: '3' } }, // Match 9
-      { a: { type: '1', key: 'H' }, b: { type: '2', key: 'G' } },   // Match 10
-      { a: { type: '1', key: 'I' }, b: { type: '3rd', key: '4' } }, // Match 11
-      { a: { type: '1', key: 'J' }, b: { type: '2', key: 'I' } },   // Match 12
-      { a: { type: '1', key: 'K' }, b: { type: '3rd', key: '5' } }, // Match 13
-      { a: { type: '2', key: 'J' }, b: { type: '2', key: 'K' } },   // Match 14
-      { a: { type: '1', key: 'L' }, b: { type: '3rd', key: '6' } }, // Match 15
-      { a: { type: '2', key: 'L' }, b: { type: '3rd', key: '7' } }, // Match 16
+      { a: { type: '1', key: 'E' }, b: { type: '3rd', key: '0' } }, // M74
+      { a: { type: '1', key: 'I' }, b: { type: '3rd', key: '1' } }, // M77
+      { a: { type: '2', key: 'A' }, b: { type: '2', key: 'B' } },   // M73
+      { a: { type: '1', key: 'F' }, b: { type: '2', key: 'C' } },   // M75
+      { a: { type: '1', key: 'C' }, b: { type: '2', key: 'F' } },   // M76
+      { a: { type: '2', key: 'E' }, b: { type: '2', key: 'I' } },   // M78
+      { a: { type: '1', key: 'A' }, b: { type: '3rd', key: '2' } }, // M79
+      { a: { type: '1', key: 'L' }, b: { type: '3rd', key: '3' } }, // M80
+      { a: { type: '2', key: 'K' }, b: { type: '2', key: 'L' } },   // M83
+      { a: { type: '1', key: 'H' }, b: { type: '2', key: 'J' } },   // M84
+      { a: { type: '1', key: 'D' }, b: { type: '3rd', key: '4' } }, // M81
+      { a: { type: '1', key: 'G' }, b: { type: '3rd', key: '5' } }, // M82
+      { a: { type: '1', key: 'J' }, b: { type: '2', key: 'H' } },   // M86
+      { a: { type: '2', key: 'D' }, b: { type: '2', key: 'G' } },   // M88
+      { a: { type: '1', key: 'B' }, b: { type: '3rd', key: '6' } }, // M85
+      { a: { type: '1', key: 'K' }, b: { type: '3rd', key: '7' } }, // M87
     ];
 
     newBracket.round_of_32 = newBracket.round_of_32.map((m: any, idx: number) => {

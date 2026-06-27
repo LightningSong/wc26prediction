@@ -173,22 +173,22 @@ def get_group_standings():
 def get_bracket():
     # Retain the exact same logic for bracket for now
     r32 = [
-        {"id": "r32_1", "date": "28 Jun, 2:00 PM", "team_a": "1° Grupo A", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #1", "flag_b": "un", "next_match": "r16_1", "slot": "team_a"},
-        {"id": "r32_2", "date": "28 Jun, 6:00 PM", "team_a": "2° Grupo A", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo B", "flag_b": "un", "next_match": "r16_1", "slot": "team_b"},
-        {"id": "r32_3", "date": "29 Jun, 2:00 PM", "team_a": "1° Grupo B", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #2", "flag_b": "un", "next_match": "r16_2", "slot": "team_a"},
-        {"id": "r32_4", "date": "29 Jun, 6:00 PM", "team_a": "1° Grupo C", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo F", "flag_b": "un", "next_match": "r16_2", "slot": "team_b"},
-        {"id": "r32_5", "date": "30 Jun, 2:00 PM", "team_a": "1° Grupo D", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #3", "flag_b": "un", "next_match": "r16_3", "slot": "team_a"},
-        {"id": "r32_6", "date": "30 Jun, 6:00 PM", "team_a": "1° Grupo E", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo D", "flag_b": "un", "next_match": "r16_3", "slot": "team_b"},
-        {"id": "r32_7", "date": "01 Jul, 2:00 PM", "team_a": "1° Grupo F", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo E", "flag_b": "un", "next_match": "r16_4", "slot": "team_a"},
-        {"id": "r32_8", "date": "01 Jul, 6:00 PM", "team_a": "2° Grupo C", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo H", "flag_b": "un", "next_match": "r16_4", "slot": "team_b"},
-        {"id": "r32_9", "date": "01 Jul, 2:00 PM", "team_a": "1° Grupo G", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #4", "flag_b": "un", "next_match": "r16_5", "slot": "team_a"},
-        {"id": "r32_10", "date": "01 Jul, 6:00 PM", "team_a": "1° Grupo H", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo G", "flag_b": "un", "next_match": "r16_5", "slot": "team_b"},
-        {"id": "r32_11", "date": "02 Jul, 2:00 PM", "team_a": "1° Grupo I", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #5", "flag_b": "un", "next_match": "r16_6", "slot": "team_a"},
-        {"id": "r32_12", "date": "02 Jul, 6:00 PM", "team_a": "1° Grupo J", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo I", "flag_b": "un", "next_match": "r16_6", "slot": "team_b"},
-        {"id": "r32_13", "date": "02 Jul, 2:00 PM", "team_a": "1° Grupo K", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #6", "flag_b": "un", "next_match": "r16_7", "slot": "team_a"},
-        {"id": "r32_14", "date": "02 Jul, 6:00 PM", "team_a": "2° Grupo J", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo K", "flag_b": "un", "next_match": "r16_7", "slot": "team_b"},
-        {"id": "r32_15", "date": "03 Jul, 2:00 PM", "team_a": "1° Grupo L", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #7", "flag_b": "un", "next_match": "r16_8", "slot": "team_a"},
-        {"id": "r32_16", "date": "03 Jul, 6:00 PM", "team_a": "2° Grupo L", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #8", "flag_b": "un", "next_match": "r16_8", "slot": "team_b"}
+        {"id": "r32_1", "date": "29 Jun, 2:00 PM", "team_a": "1° Grupo E", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #1", "flag_b": "un", "next_match": "r16_1", "slot": "team_a"},
+        {"id": "r32_2", "date": "30 Jun, 2:00 PM", "team_a": "1° Grupo I", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #2", "flag_b": "un", "next_match": "r16_1", "slot": "team_b"},
+        {"id": "r32_3", "date": "28 Jun, 2:00 PM", "team_a": "2° Grupo A", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo B", "flag_b": "un", "next_match": "r16_2", "slot": "team_a"},
+        {"id": "r32_4", "date": "30 Jun, 6:00 PM", "team_a": "1° Grupo F", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo C", "flag_b": "un", "next_match": "r16_2", "slot": "team_b"},
+        {"id": "r32_5", "date": "29 Jun, 6:00 PM", "team_a": "1° Grupo C", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo F", "flag_b": "un", "next_match": "r16_3", "slot": "team_a"},
+        {"id": "r32_6", "date": "30 Jun, 6:00 PM", "team_a": "2° Grupo E", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo I", "flag_b": "un", "next_match": "r16_3", "slot": "team_b"},
+        {"id": "r32_7", "date": "01 Jul, 2:00 PM", "team_a": "1° Grupo A", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #3", "flag_b": "un", "next_match": "r16_4", "slot": "team_a"},
+        {"id": "r32_8", "date": "01 Jul, 6:00 PM", "team_a": "1° Grupo L", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #4", "flag_b": "un", "next_match": "r16_4", "slot": "team_b"},
+        {"id": "r32_9", "date": "02 Jul, 2:00 PM", "team_a": "2° Grupo K", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo L", "flag_b": "un", "next_match": "r16_5", "slot": "team_a"},
+        {"id": "r32_10", "date": "02 Jul, 6:00 PM", "team_a": "1° Grupo H", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo J", "flag_b": "un", "next_match": "r16_5", "slot": "team_b"},
+        {"id": "r32_11", "date": "02 Jul, 2:00 PM", "team_a": "1° Grupo D", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #5", "flag_b": "un", "next_match": "r16_6", "slot": "team_a"},
+        {"id": "r32_12", "date": "01 Jul, 2:00 PM", "team_a": "1° Grupo G", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #6", "flag_b": "un", "next_match": "r16_6", "slot": "team_b"},
+        {"id": "r32_13", "date": "03 Jul, 6:00 PM", "team_a": "1° Grupo J", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo H", "flag_b": "un", "next_match": "r16_7", "slot": "team_a"},
+        {"id": "r32_14", "date": "03 Jul, 6:00 PM", "team_a": "2° Grupo D", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo G", "flag_b": "un", "next_match": "r16_7", "slot": "team_b"},
+        {"id": "r32_15", "date": "03 Jul, 2:00 PM", "team_a": "1° Grupo B", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #7", "flag_b": "un", "next_match": "r16_8", "slot": "team_a"},
+        {"id": "r32_16", "date": "04 Jul, 2:00 PM", "team_a": "1° Grupo K", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #8", "flag_b": "un", "next_match": "r16_8", "slot": "team_b"}
     ]
     r16 = [
         {"id": "r16_1", "date": "04 Jul, 2:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "qf_1", "slot": "team_a"},
