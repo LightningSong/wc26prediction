@@ -10,25 +10,78 @@ interface MatchesViewProps {
 export default function MatchesView({ matches, onScoreChange, onMatchSelect, selectedMatchId }: MatchesViewProps) {
   const [filter, setFilter] = React.useState('all');
 
+  const sortedMatches = React.useMemo(() => {
+    return [...matches].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+  }, [matches]);
+
   const filteredMatches = filter === 'all' 
-    ? [...matches]
-    : matches.filter(m => filter === 'finished' ? m.status?.includes('Finalizado') || m.status?.includes('Simulado') : m.status?.includes('vivo'));
-  
+    ? sortedMatches
+    : sortedMatches.filter(m => filter === 'finished' ? m.status?.includes('Finalizado') || m.status?.includes('Simulado') : m.status?.includes('vivo'));
+
   const byD: Record<string, typeof matches> = {};
-  filteredMatches.forEach(m => {
-    let category = m.category || "Fase de Grupos";
-    if (m.status?.includes('vivo') && filter === 'all') {
-      category = "🔴 EN VIVO";
-    }
-    if (!byD[category]) byD[category] = [];
-    byD[category].push(m);
-  });
   
-  // Sort the keys so "🔴 EN VIVO" comes first, then by date logic
+  if (filter === 'all') {
+    const todayMatches: any[] = [];
+    const tomorrowMatches: any[] = [];
+    const yesterdayMatches: any[] = [];
+    const otherMatches: any[] = [];
+    
+    filteredMatches.forEach(m => {
+      if (m.status?.includes("Hoy") || m.status?.includes("En vivo")) {
+        todayMatches.push(m);
+      } else if (m.status?.includes("Mañana")) {
+        tomorrowMatches.push(m);
+      } else if (m.status?.includes("Ayer")) {
+        yesterdayMatches.push(m);
+      } else {
+        otherMatches.push(m);
+      }
+    });
+
+    if (todayMatches.length > 0) {
+      const hasLive = todayMatches.some(m => m.status?.includes("vivo"));
+      const header = hasLive ? "🔴 EN VIVO" : "HOY";
+      byD[header] = todayMatches;
+    }
+    if (tomorrowMatches.length > 0) {
+      byD["MAÑANA"] = tomorrowMatches;
+    }
+    if (yesterdayMatches.length > 0) {
+      byD["AYER"] = yesterdayMatches;
+    }
+
+    otherMatches.forEach(m => {
+      const category = m.category || "Fase de Grupos";
+      if (!byD[category]) byD[category] = [];
+      byD[category].push(m);
+    });
+  } else {
+    filteredMatches.forEach(m => {
+      let category = m.category || "Fase de Grupos";
+      if (m.status?.includes('vivo')) {
+        category = "🔴 EN VIVO";
+      }
+      if (!byD[category]) byD[category] = [];
+      byD[category].push(m);
+    });
+  }
+
   const sortedDates = Object.keys(byD).sort((a, b) => {
-    if (a === "🔴 EN VIVO") return -1;
-    if (b === "🔴 EN VIVO") return 1;
-    return 0; // The natural chronological order of dates is mostly preserved by the initial match sorting
+    const priorities: Record<string, number> = {
+      "🔴 EN VIVO": 1,
+      "HOY": 2,
+      "MAÑANA": 3,
+      "AYER": 4
+    };
+    
+    const aPriority = priorities[a] || 999;
+    const bPriority = priorities[b] || 999;
+    
+    if (aPriority !== bPriority) {
+      return aPriority - bPriority;
+    }
+    
+    return Object.keys(byD).indexOf(a) - Object.keys(byD).indexOf(b);
   });
 
   return (

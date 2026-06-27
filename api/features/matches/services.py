@@ -97,31 +97,7 @@ def get_matches_for_today():
             "round": "Fase de Grupos"
         })
         
-    def get_sort_key(m):
-        match_date = datetime.fromisoformat(m["date"])
-        local_match = match_date.astimezone(local_tz)
-        local_now = now.astimezone(local_tz)
-        diff_days = (local_match.date() - local_now.date()).days
-        
-        # 0: Today (diff_days == 0)
-        # 1: Tomorrow (diff_days == 1)
-        # 2: Future (diff_days > 1)
-        # 3: Past (diff_days < 0)
-        if diff_days == 0:
-            priority = 0
-            time_val = match_date.timestamp()
-        elif diff_days == 1:
-            priority = 1
-            time_val = match_date.timestamp()
-        elif diff_days > 1:
-            priority = 2
-            time_val = match_date.timestamp()
-        else:
-            priority = 3
-            time_val = -match_date.timestamp() # Show recent past first
-        return (priority, time_val)
-
-    formatted_matches.sort(key=get_sort_key)
+    formatted_matches.sort(key=lambda x: x["date"])
     return formatted_matches
 
 def get_group_standings():
