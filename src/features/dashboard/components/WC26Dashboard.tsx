@@ -93,7 +93,7 @@ export default function WC26Dashboard() {
       <main className={`mx-auto px-4 py-12 relative flex gap-6 items-start transition-all duration-500 w-full ${selectedMatch ? 'max-w-[1600px]' : 'max-w-7xl'}`}>
         <div className="flex-1 min-w-0 transition-opacity duration-300">
           <div className={activeTab === 'grupos' ? 'block' : 'hidden'}>
-            <GroupsView groups={groupsData} />
+            <GroupsView groups={groupsData} matches={matchesData} />
           </div>
           <div className={activeTab === 'partidos' ? 'block' : 'hidden'}>
             <MatchesView 
@@ -109,7 +109,8 @@ export default function WC26Dashboard() {
               onAdvanceTeam={handleAdvanceTeam}
               onBracketScoreChange={handleBracketScoreChange}
               onMatchSelect={setSelectedMatch}
-              selectedMatchId={selectedMatch?.id}
+              selectedMatch={selectedMatch}
+              liveScore={liveScore}
             />
           </div>
           <div className={activeTab === 'estadios' ? 'block' : 'hidden'}>
