@@ -13,7 +13,7 @@ import PredictionPanel from '@/features/predictions/components/PredictionPanel';
 import { useTournament } from '@/hooks/useTournament';
 
 export default function WC26Dashboard() {
-  const [activeTab, setActiveTab] = useState('grupos');
+  const [activeTab, setActiveTab] = useState('partidos');
   
   const {
     matchesData,
