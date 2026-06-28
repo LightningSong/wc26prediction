@@ -9,7 +9,7 @@ Este es un proyecto híbrido moderno para simular y predecir los resultados de l
 1. **Algoritmo de Predicción y Motor Matemático**:
    *   **Web Scraping & Historial Reciente**: Extrae automáticamente los últimos 12 partidos oficiales de cada selección de la FIFA.
    *   **Decaimiento Temporal**: Aplica un factor de ponderación exponencial para que los partidos más recientes tengan mayor peso en la proyección que los encuentros más antiguos.
-   *   **Anclaje de Ranking FIFA**: Cruza los puntos y la posición del ranking oficial de la FIFA de cada selección (ej. México 1681 pts, Sudáfrica 1430 pts) para modelar la fuerza relativa inicial.
+   *   **Anclaje de Ranking FIFA**: Cruza los puntos y la posición del ranking oficial de la FIFA de cada selección para modelar la fuerza relativa inicial.
    *   **Ventaja Histórica (Head-to-Head)**: Analiza el historial histórico de enfrentamientos entre ambos rivales para identificar y ponderar ventajas históricas de juego.
    *   **Expectativa de Goles (xG)**: Genera la proyección y expectativa de goles esperados de cada selección para el encuentro.
    *   **Corrección de Marcadores Bajos**: Aplica una calibración matemática que incrementa la probabilidad de marcadores cerrados y empates de bajas anotaciones, reflejando el comportamiento real de los torneos de fútbol de alta tensión.
