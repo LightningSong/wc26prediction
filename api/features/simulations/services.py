@@ -249,6 +249,8 @@ def run_full_simulation(state, stochastic=False):
 
     # 1. Simulate remaining group matches
     for m in matches:
+        if not m["id"].startswith("g_f"):
+            continue
         if m["score_a"] is None or m["score_b"] is None:
             sa, sb = get_most_probable_score(m["team_a"], m["team_b"], stochastic=stochastic)
             m["score_a"] = sa

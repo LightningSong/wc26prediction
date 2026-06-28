@@ -1,6 +1,6 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 
-const LOCAL_STORAGE_KEY = "wc26_tournament_state_v9";
+const LOCAL_STORAGE_KEY = "wc26_tournament_state_v10";
 
 export function useTournament() {
   const [matchesData, setMatchesData] = useState<any[]>([]);
@@ -272,7 +272,7 @@ export function useTournament() {
         setLoading(false);
       } else {
         const [matchesRes, groupsRes, bracketRes] = await Promise.all([
-          fetch("/api/matches/today"),
+          fetch("/api/matches/all"),
           fetch("/api/groups"),
           fetch("/api/bracket"),
         ]);
@@ -313,7 +313,7 @@ export function useTournament() {
     const interval = setInterval(async () => {
       try {
         const [matchesRes, groupsRes] = await Promise.all([
-          fetch("/api/matches/today"),
+          fetch("/api/matches/all"),
           fetch("/api/groups"),
         ]);
 
@@ -547,8 +547,44 @@ export function useTournament() {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(stateToSave));
   };
 
+  const unifiedMatches = useMemo(() => {
+    if (!bracketData) return matchesData;
+    const bracketMatchesMap: Record<string, any> = {};
+    const rounds = ["round_of_32", "round_of_16", "quarter_finals", "semis", "final", "third_place"];
+    rounds.forEach(roundKey => {
+      if (bracketData[roundKey]) {
+        bracketData[roundKey].forEach((m: any) => {
+          bracketMatchesMap[m.id] = m;
+        });
+      }
+    });
+
+    return matchesData.map((m: any) => {
+      if (bracketMatchesMap[m.id]) {
+        const bm = bracketMatchesMap[m.id];
+        let updatedStatus = m.status;
+        const hasScore = bm.score_a !== null && bm.score_b !== null;
+        if (hasScore && !m.status?.includes("Finalizado") && !m.status?.includes("En vivo")) {
+          updatedStatus = "Simulado";
+        }
+        return {
+          ...m,
+          team_a: bm.team_a,
+          team_b: bm.team_b,
+          flag_a: bm.flag_a,
+          flag_b: bm.flag_b,
+          score_a: bm.score_a,
+          score_b: bm.score_b,
+          penalty_winner: bm.penalty_winner,
+          status: updatedStatus
+        };
+      }
+      return m;
+    });
+  }, [matchesData, bracketData]);
+
   return {
-    matchesData,
+    matchesData: unifiedMatches,
     groupsData,
     bracketData,
     loading,

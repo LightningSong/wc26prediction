@@ -463,3 +463,82 @@ def get_h2h(team_a: str, team_b: str):
             else: draws += 1
             
     return {"team_a_wins": wins_a, "draws": draws, "team_b_wins": wins_b}
+
+
+def get_all_matches():
+    group_matches = get_matches_for_today()
+    bracket = get_bracket()
+    
+    round_names = {
+        "round_of_32": "Dieciseisavos",
+        "round_of_16": "Octavos",
+        "quarter_finals": "Cuartos",
+        "semis": "Semifinales",
+        "final": "Final",
+        "third_place": "Tercer Puesto"
+    }
+    
+    now = datetime.now(timezone.utc)
+    local_tz = timezone(timedelta(hours=-5)) # Lima, Peru timezone (UTC-5)
+    local_now = now.astimezone(local_tz)
+    
+    knockout_matches = []
+    
+    for round_key, matches in bracket.items():
+        round_name = round_names.get(round_key, "Eliminatorias")
+        for m in matches:
+            try:
+                date_str = m["date"]
+                cleaned = date_str.replace(",", "").strip()
+                dt = datetime.strptime(f"2026 {cleaned}", "%Y %d %b %I:%M %p")
+                match_date = dt.replace(tzinfo=local_tz)
+            except Exception:
+                match_date = datetime(2026, 7, 1, 12, 0, tzinfo=local_tz)
+            
+            local_match = match_date.astimezone(local_tz)
+            diff_days = (local_match.date() - local_now.date()).days
+            
+            if diff_days == 0:
+                date_label = "Hoy"
+            elif diff_days == 1:
+                date_label = "Mañana"
+            elif diff_days == -1:
+                date_label = "Ayer"
+            else:
+                date_label = local_match.strftime("%d %b")
+                
+            time_str = local_match.strftime("%I:%M %p").lstrip("0")
+            
+            match_date_utc = match_date.astimezone(timezone.utc)
+            end_time = match_date_utc + timedelta(minutes=110)
+            
+            if now > end_time:
+                status = f"Finalizado | {date_label}"
+            elif match_date_utc <= now <= end_time:
+                status = f"En vivo | {date_label}"
+            else:
+                status = f"{date_label}, {time_str}"
+                
+            category = local_match.strftime("%d %b")
+            
+            knockout_matches.append({
+                "id": m["id"],
+                "group": None,
+                "category": category,
+                "team_a": m["team_a"],
+                "team_b": m["team_b"],
+                "flag_a": m.get("flag_a", "un"),
+                "flag_b": m.get("flag_b", "un"),
+                "score_a": m.get("score_a"),
+                "score_b": m.get("score_b"),
+                "penalty_winner": m.get("penalty_winner"),
+                "status": status,
+                "date": match_date.isoformat(),
+                "stadium": m.get("stadium", "A definir"),
+                "round": round_name
+            })
+            
+    all_matches = group_matches + knockout_matches
+    all_matches.sort(key=lambda x: x["date"])
+    return all_matches
+
