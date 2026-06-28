@@ -68,7 +68,11 @@ class SoccerScraper:
                     continue
                 home_es = WIKI_TEAM_TRANSLATIONS[home_raw]
                 away_es = WIKI_TEAM_TRANSLATIONS[away_raw]
-                group_name = team_to_group.get(home_es, "Grupo Desconocido")
+                group_a = team_to_group.get(home_es)
+                group_b = team_to_group.get(away_es)
+                if not group_a or not group_b or group_a != group_b:
+                    continue
+                group_name = group_a
                 
                 score_el = box.find(class_='fscore')
                 score_text = score_el.text.strip() if score_el else ""
@@ -220,5 +224,74 @@ class SoccerScraper:
         
     def get_groups(self):
         return self.fallback_groups
+
+    def fetch_knockout_results(self):
+        try:
+            response = requests.get("https://en.wikipedia.org/wiki/2026_FIFA_World_Cup", headers=self.headers, timeout=5)
+            response.encoding = 'utf-8'
+            soup = BeautifulSoup(response.text, 'html.parser')
+            
+            boxes = soup.find_all('div', {'class': 'footballbox'})
+            if len(boxes) == 0:
+                return []
+                
+            team_to_group = {}
+            for g_name, teams in self.fallback_groups.items():
+                for t in teams:
+                    team_to_group[t] = g_name
+                    
+            knockout_results = []
+            
+            for box in boxes:
+                home_el = box.find(class_='fhome')
+                away_el = box.find(class_='faway')
+                if not home_el or not away_el:
+                    continue
+                home_raw = home_el.text.strip()
+                away_raw = away_el.text.strip()
+                
+                if home_raw not in WIKI_TEAM_TRANSLATIONS or away_raw not in WIKI_TEAM_TRANSLATIONS:
+                    continue
+                    
+                home_es = WIKI_TEAM_TRANSLATIONS[home_raw]
+                away_es = WIKI_TEAM_TRANSLATIONS[away_raw]
+                
+                group_a = team_to_group.get(home_es)
+                group_b = team_to_group.get(away_es)
+                
+                if not group_a or not group_b or group_a != group_b:
+                    score_el = box.find(class_='fscore')
+                    score_text = score_el.text.strip() if score_el else ""
+                    
+                    score_a = None
+                    score_b = None
+                    
+                    normalized_score = score_text.replace('\u2013', '-').replace('\u2212', '-')
+                    m = re.match(r'^(\d+)\s*-\s*(\d+)$', normalized_score)
+                    if m:
+                        score_a = int(m.group(1))
+                        score_b = int(m.group(2))
+                    
+                    pen_winner = None
+                    pen_el = box.find(class_='fpenalties')
+                    if pen_el:
+                        home_bold = home_el.find(['b', 'strong']) is not None
+                        away_bold = away_el.find(['b', 'strong']) is not None
+                        if home_bold and not away_bold:
+                            pen_winner = home_es
+                        elif away_bold and not home_bold:
+                            pen_winner = away_es
+                            
+                    knockout_results.append({
+                        "team_a": home_es,
+                        "team_b": away_es,
+                        "score_a": score_a,
+                        "score_b": score_b,
+                        "penalty_winner": pen_winner
+                    })
+            return knockout_results
+        except Exception as e:
+            print("Error fetching knockout matches:", e)
+            return []
 
 scraper = SoccerScraper()

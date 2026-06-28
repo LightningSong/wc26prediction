@@ -168,8 +168,105 @@ def get_group_standings():
         
     return groups_data
 
+def is_tbd(team_name):
+    if not team_name:
+        return True
+    return "Grupo" in team_name or "Mejor #" in team_name or "definir" in team_name or "Definir" in team_name
+
+def propagate_bracket_changes(bracket):
+    rounds_keys = ["round_of_32", "round_of_16", "quarter_finals", "semis", "final"]
+    for r in range(len(rounds_keys) - 1):
+        curr_round = rounds_keys[r]
+        next_round = rounds_keys[r + 1]
+        for m in bracket[curr_round]:
+            next_id = m.get("next_match")
+            slot = m.get("slot")
+            if not next_id or not slot:
+                continue
+            next_m = next((nm for nm in bracket[next_round] if nm["id"] == next_id), None)
+            if not next_m:
+                continue
+            if next_m.get("score_a") is not None and next_m.get("score_b") is not None:
+                continue
+            winner_name = "A definir"
+            winner_flag = "un"
+            sa = m.get("score_a")
+            sb = m.get("score_b")
+            has_score = sa is not None and sb is not None
+            both_defined = not is_tbd(m["team_a"]) and not is_tbd(m["team_b"])
+            if both_defined:
+                if has_score:
+                    if sa > sb:
+                        winner_name = m["team_a"]
+                        winner_flag = m["flag_a"]
+                    elif sb > sa:
+                        winner_name = m["team_b"]
+                        winner_flag = m["flag_b"]
+                    elif m.get("penalty_winner"):
+                        winner_name = m["penalty_winner"]
+                        winner_flag = m["flag_a"] if m["penalty_winner"] == m["team_a"] else m["flag_b"]
+                elif m.get("penalty_winner"):
+                    winner_name = m["penalty_winner"]
+                    winner_flag = m["flag_a"] if m["penalty_winner"] == m["team_a"] else m["flag_b"]
+            current_slot_team = next_m.get(slot)
+            if current_slot_team != winner_name:
+                next_m[slot] = winner_name
+                flag_key = "flag_a" if slot == "team_a" else "flag_b"
+                next_m[flag_key] = winner_flag
+                next_m["score_a"] = None
+                next_m["score_b"] = None
+                next_m["penalty_winner"] = None
+                
+    sf1 = next((m for m in bracket["semis"] if m["id"] == "sf_1"), None)
+    sf2 = next((m for m in bracket["semis"] if m["id"] == "sf_2"), None)
+    gran_final = bracket["final"][0] if len(bracket["final"]) > 0 else None
+    third_place = bracket["third_place"][0] if len(bracket["third_place"]) > 0 else None
+    
+    def get_winner_loser(m):
+        if not m or is_tbd(m["team_a"]) or is_tbd(m["team_b"]):
+            return "A definir", "un", "A definir", "un"
+        sa = m.get("score_a")
+        sb = m.get("score_b")
+        has_score = sa is not None and sb is not None
+        w_name, w_flag = "A definir", "un"
+        l_name, l_flag = "A definir", "un"
+        if has_score:
+            if sa > sb:
+                w_name, w_flag = m["team_a"], m["flag_a"]
+                l_name, l_flag = m["team_b"], m["flag_b"]
+            elif sb > sa:
+                w_name, w_flag = m["team_b"], m["flag_b"]
+                l_name, l_flag = m["team_a"], m["flag_a"]
+            elif m.get("penalty_winner"):
+                pw = m["penalty_winner"]
+                w_name = pw
+                w_flag = m["flag_a"] if pw == m["team_a"] else m["flag_b"]
+                l_name = m["team_b"] if pw == m["team_a"] else m["team_a"]
+                l_flag = m["flag_b"] if pw == m["team_a"] else m["flag_a"]
+        elif m.get("penalty_winner"):
+            pw = m["penalty_winner"]
+            w_name = pw
+            w_flag = m["flag_a"] if pw == m["team_a"] else m["flag_b"]
+            l_name = m["team_b"] if pw == m["team_a"] else m["team_a"]
+            l_flag = m["flag_b"] if pw == m["team_a"] else m["flag_a"]
+        return w_name, w_flag, l_name, l_flag
+
+    if sf1 and sf2 and gran_final and third_place:
+        w1, wf1, l1, lf1 = get_winner_loser(sf1)
+        w2, wf2, l2, lf2 = get_winner_loser(sf2)
+        if gran_final.get("score_a") is None or gran_final.get("score_b") is None:
+            if gran_final.get("team_a") != w1:
+                gran_final["team_a"] = w1; gran_final["flag_a"] = wf1; gran_final["score_a"] = None; gran_final["score_b"] = None; gran_final["penalty_winner"] = None
+            if gran_final.get("team_b") != w2:
+                gran_final["team_b"] = w2; gran_final["flag_b"] = wf2; gran_final["score_a"] = None; gran_final["score_b"] = None; gran_final["penalty_winner"] = None
+        if third_place.get("score_a") is None or third_place.get("score_b") is None:
+            if third_place.get("team_a") != l1:
+                third_place["team_a"] = l1; third_place["flag_a"] = lf1; third_place["score_a"] = None; third_place["score_b"] = None; third_place["penalty_winner"] = None
+            if third_place.get("team_b") != l2:
+                third_place["team_b"] = l2; third_place["flag_b"] = lf2; third_place["score_a"] = None; third_place["score_b"] = None; third_place["penalty_winner"] = None
+    return bracket
+
 def get_bracket():
-    # Retain the exact same logic for bracket for now
     r32 = [
         {"id": "r32_1", "date": "29 Jun, 2:00 PM", "team_a": "1° Grupo E", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #1", "flag_b": "un", "next_match": "r16_1", "slot": "team_a"},
         {"id": "r32_2", "date": "30 Jun, 2:00 PM", "team_a": "1° Grupo I", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #2", "flag_b": "un", "next_match": "r16_1", "slot": "team_b"},
@@ -214,9 +311,100 @@ def get_bracket():
     third_place = [
         {"id": "third_place", "date": "18 Jul, 4:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": None, "slot": None}
     ]
-    return {
+    bracket_data = {
         "round_of_32": r32, "round_of_16": r16, "quarter_finals": qf, "semis": sf, "final": final, "third_place": third_place
     }
+
+    try:
+        # 1. Resolve placeholders using group standings
+        standings = get_group_standings()
+        thirds = []
+        for g in standings:
+            if len(g["teams"]) >= 3:
+                thirds.append({
+                    "team": g["teams"][2],
+                    "group_char": g["name"].replace("Grupo ", "")
+                })
+        thirds.sort(key=lambda x: (x["team"]["pts"], x["team"]["dg"], x["team"]["gf"]), reverse=True)
+        
+        def get_team_info(type_str, key_str):
+            if type_str == '3rd':
+                idx = int(key_str)
+                if idx < len(thirds):
+                    candidate = thirds[idx]["team"]
+                    return candidate["name"], candidate["flag"]
+                return f"3° Mejor #{idx + 1}", "un"
+            else:
+                group_name = f"Grupo {key_str}"
+                group = next((g for g in standings if g["name"] == group_name), None)
+                if group and len(group["teams"]) > 0:
+                    idx = 0 if type_str == '1' else 1
+                    if idx < len(group["teams"]):
+                        candidate = group["teams"][idx]
+                        return candidate["name"], candidate["flag"]
+                return f"{type_str}° {group_name}", "un"
+
+        r32_mapping = [
+            {"a": {"type": "1", "key": "E"}, "b": {"type": "3rd", "key": "0"}},
+            {"a": {"type": "1", "key": "I"}, "b": {"type": "3rd", "key": "1"}},
+            {"a": {"type": "2", "key": "A"}, "b": {"type": "2", "key": "B"}},
+            {"a": {"type": "1", "key": "F"}, "b": {"type": "2", "key": "C"}},
+            {"a": {"type": "1", "key": "C"}, "b": {"type": "2", "key": "F"}},
+            {"a": {"type": "2", "key": "E"}, "b": {"type": "2", "key": "I"}},
+            {"a": {"type": "1", "key": "A"}, "b": {"type": "3rd", "key": "2"}},
+            {"a": {"type": "1", "key": "L"}, "b": {"type": "3rd", "key": "3"}},
+            {"a": {"type": "2", "key": "K"}, "b": {"type": "2", "key": "L"}},
+            {"a": {"type": "1", "key": "H"}, "b": {"type": "2", "key": "J"}},
+            {"a": {"type": "1", "key": "D"}, "b": {"type": "3rd", "key": "4"}},
+            {"a": {"type": "1", "key": "G"}, "b": {"type": "3rd", "key": "5"}},
+            {"a": {"type": "1", "key": "J"}, "b": {"type": "2", "key": "H"}},
+            {"a": {"type": "2", "key": "D"}, "b": {"type": "2", "key": "G"}},
+            {"a": {"type": "1", "key": "B"}, "b": {"type": "3rd", "key": "6"}},
+            {"a": {"type": "1", "key": "K"}, "b": {"type": "3rd", "key": "7"}},
+        ]
+        
+        for idx, m in enumerate(bracket_data["round_of_32"]):
+            map_entry = r32_mapping[idx]
+            ta_name, ta_flag = get_team_info(map_entry["a"]["type"], map_entry["a"]["key"])
+            tb_name, tb_flag = get_team_info(map_entry["b"]["type"], map_entry["b"]["key"])
+            m["team_a"] = ta_name
+            m["flag_a"] = ta_flag
+            m["team_b"] = tb_name
+            m["flag_b"] = tb_flag
+
+        # 2. Fetch and apply real-world knockout results from Wikipedia
+        scraped_ko = scraper.fetch_knockout_results()
+        for s in scraped_ko:
+            found = False
+            for round_key in ["round_of_32", "round_of_16", "quarter_finals", "semis", "final", "third_place"]:
+                for m in bracket_data[round_key]:
+                    match_found = False
+                    swapped = False
+                    if m["team_a"] == s["team_a"] and m["team_b"] == s["team_b"]:
+                        match_found = True
+                    elif m["team_a"] == s["team_b"] and m["team_b"] == s["team_a"]:
+                        match_found = True
+                        swapped = True
+                        
+                    if match_found:
+                        if swapped:
+                            m["score_a"] = s["score_b"]
+                            m["score_b"] = s["score_a"]
+                        else:
+                            m["score_a"] = s["score_a"]
+                            m["score_b"] = s["score_b"]
+                        m["penalty_winner"] = s["penalty_winner"]
+                        found = True
+                        break
+                if found:
+                    break
+
+        # 3. Propagate results to next rounds
+        bracket_data = propagate_bracket_changes(bracket_data)
+    except Exception as e:
+        print("Error dynamically calculating bracket results:", e)
+
+    return bracket_data
 
 def get_last_matches(team_name: str, limit: int = 12):
     results = []
