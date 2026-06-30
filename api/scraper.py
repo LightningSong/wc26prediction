@@ -28,6 +28,44 @@ WIKI_TEAM_TRANSLATIONS = {
     "United States": "Estados Unidos", "Uruguay": "Uruguay", "Uzbekistan": "Uzbekistán"
 }
 
+WIKI_STADIUM_NORMALIZATION = {
+    "Boston Stadium": "Gillette Stadium",
+    "Gillette Stadium": "Gillette Stadium",
+    "New York New Jersey Stadium": "MetLife Stadium",
+    "New York/New Jersey Stadium": "MetLife Stadium",
+    "MetLife Stadium": "MetLife Stadium",
+    "Los Angeles Stadium": "SoFi Stadium",
+    "SoFi Stadium": "SoFi Stadium",
+    "Miami Stadium": "Hard Rock Stadium",
+    "Hard Rock Stadium": "Hard Rock Stadium",
+    "Dallas Stadium": "AT&T Stadium",
+    "AT&T Stadium": "AT&T Stadium",
+    "Atlanta Stadium": "Mercedes-Benz Stadium",
+    "Mercedes-Benz Stadium": "Mercedes-Benz Stadium",
+    "Houston Stadium": "NRG Stadium",
+    "NRG Stadium": "NRG Stadium",
+    "Kansas City Stadium": "Arrowhead Stadium",
+    "Arrowhead Stadium": "Arrowhead Stadium",
+    "Seattle Stadium": "Lumen Field",
+    "Lumen Field": "Lumen Field",
+    "San Francisco Bay Area Stadium": "Levi's Stadium",
+    "Levi's Stadium": "Levi's Stadium",
+    "San Francisco Stadium": "Levi's Stadium",
+    "Philadelphia Stadium": "Lincoln Financial",
+    "Lincoln Financial Field": "Lincoln Financial",
+    "Lincoln Financial": "Lincoln Financial",
+    "Vancouver Stadium": "BC Place",
+    "BC Place": "BC Place",
+    "Guadalajara Stadium": "Estadio Akron",
+    "Estadio Akron": "Estadio Akron",
+    "Monterrey Stadium": "Estadio BBVA",
+    "Estadio BBVA": "Estadio BBVA",
+    "Mexico City Stadium": "Estadio Azteca",
+    "Estadio Azteca": "Estadio Azteca",
+    "Toronto Stadium": "BMO Field",
+    "BMO Field": "BMO Field"
+}
+
 class SoccerScraper:
     def __init__(self):
         self.headers = {
@@ -118,6 +156,7 @@ class SoccerScraper:
                 stadium_text = stadium_el.text.strip() if stadium_el else "A definir"
                 if "," in stadium_text:
                     stadium_text = stadium_text.split(",")[0].strip()
+                stadium_text = WIKI_STADIUM_NORMALIZATION.get(stadium_text, stadium_text)
                     
                 group_matches[group_name].append({
                     "team_a": home_es,
@@ -227,7 +266,7 @@ class SoccerScraper:
 
     def fetch_knockout_results(self):
         try:
-            response = requests.get("https://en.wikipedia.org/wiki/2026_FIFA_World_Cup", headers=self.headers, timeout=5)
+            response = requests.get("https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_knockout_stage", headers=self.headers, timeout=5)
             response.encoding = 'utf-8'
             soup = BeautifulSoup(response.text, 'html.parser')
             
@@ -267,27 +306,49 @@ class SoccerScraper:
                     score_b = None
                     
                     normalized_score = score_text.replace('\u2013', '-').replace('\u2212', '-')
-                    m = re.match(r'^(\d+)\s*-\s*(\d+)$', normalized_score)
+                    m = re.search(r'(\d+)\s*-\s*(\d+)', normalized_score)
                     if m:
                         score_a = int(m.group(1))
                         score_b = int(m.group(2))
                     
                     pen_winner = None
-                    pen_el = box.find(class_='fpenalties')
-                    if pen_el:
-                        home_bold = home_el.find(['b', 'strong']) is not None
-                        away_bold = away_el.find(['b', 'strong']) is not None
-                        if home_bold and not away_bold:
-                            pen_winner = home_es
-                        elif away_bold and not home_bold:
-                            pen_winner = away_es
+                    if score_a is not None and score_b is not None and score_a == score_b:
+                        # Try parsing penalty shootout score first
+                        for tr in box.find_all('tr'):
+                            th = tr.find('th')
+                            if th:
+                                th_text = th.text.strip().replace('\u2013', '-').replace('\u2212', '-')
+                                m_pen = re.search(r'^(\d+)\s*-\s*(\d+)$', th_text)
+                                if m_pen:
+                                    pen_a = int(m_pen.group(1))
+                                    pen_b = int(m_pen.group(2))
+                                    if pen_a > pen_b:
+                                        pen_winner = home_es
+                                    elif pen_b > pen_a:
+                                        pen_winner = away_es
+                                    break
+                        # Fallback to bolding detection if not resolved yet
+                        if not pen_winner:
+                            home_bold = home_el.find(['b', 'strong']) is not None
+                            away_bold = away_el.find(['b', 'strong']) is not None
+                            if home_bold and not away_bold:
+                                pen_winner = home_es
+                            elif away_bold and not home_bold:
+                                pen_winner = away_es
+                            
+                    stadium_el = box.find(itemprop='name address') or box.find(class_='fright')
+                    stadium_text = stadium_el.text.strip() if stadium_el else "A definir"
+                    if "," in stadium_text:
+                        stadium_text = stadium_text.split(",")[0].strip()
+                    stadium_text = WIKI_STADIUM_NORMALIZATION.get(stadium_text, stadium_text)
                             
                     knockout_results.append({
                         "team_a": home_es,
                         "team_b": away_es,
                         "score_a": score_a,
                         "score_b": score_b,
-                        "penalty_winner": pen_winner
+                        "penalty_winner": pen_winner,
+                        "stadium": stadium_text
                     })
             return knockout_results
         except Exception as e:

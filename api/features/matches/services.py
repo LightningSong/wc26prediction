@@ -268,48 +268,48 @@ def propagate_bracket_changes(bracket):
 
 def get_bracket():
     r32 = [
-        {"id": "r32_1", "date": "29 Jun, 2:00 PM", "team_a": "1° Grupo E", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #1", "flag_b": "un", "next_match": "r16_1", "slot": "team_a"},
-        {"id": "r32_2", "date": "30 Jun, 2:00 PM", "team_a": "1° Grupo I", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #2", "flag_b": "un", "next_match": "r16_1", "slot": "team_b"},
-        {"id": "r32_3", "date": "28 Jun, 2:00 PM", "team_a": "2° Grupo A", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo B", "flag_b": "un", "next_match": "r16_2", "slot": "team_a"},
-        {"id": "r32_4", "date": "30 Jun, 6:00 PM", "team_a": "1° Grupo F", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo C", "flag_b": "un", "next_match": "r16_2", "slot": "team_b"},
-        {"id": "r32_5", "date": "29 Jun, 6:00 PM", "team_a": "1° Grupo C", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo F", "flag_b": "un", "next_match": "r16_3", "slot": "team_a"},
-        {"id": "r32_6", "date": "30 Jun, 6:00 PM", "team_a": "2° Grupo E", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo I", "flag_b": "un", "next_match": "r16_3", "slot": "team_b"},
-        {"id": "r32_7", "date": "01 Jul, 2:00 PM", "team_a": "1° Grupo A", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #3", "flag_b": "un", "next_match": "r16_4", "slot": "team_a"},
-        {"id": "r32_8", "date": "01 Jul, 6:00 PM", "team_a": "1° Grupo L", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #4", "flag_b": "un", "next_match": "r16_4", "slot": "team_b"},
-        {"id": "r32_9", "date": "02 Jul, 2:00 PM", "team_a": "2° Grupo K", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo L", "flag_b": "un", "next_match": "r16_5", "slot": "team_a"},
-        {"id": "r32_10", "date": "02 Jul, 6:00 PM", "team_a": "1° Grupo H", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo J", "flag_b": "un", "next_match": "r16_5", "slot": "team_b"},
-        {"id": "r32_11", "date": "02 Jul, 2:00 PM", "team_a": "1° Grupo D", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #5", "flag_b": "un", "next_match": "r16_6", "slot": "team_a"},
-        {"id": "r32_12", "date": "01 Jul, 2:00 PM", "team_a": "1° Grupo G", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #6", "flag_b": "un", "next_match": "r16_6", "slot": "team_b"},
-        {"id": "r32_13", "date": "03 Jul, 6:00 PM", "team_a": "1° Grupo J", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo H", "flag_b": "un", "next_match": "r16_7", "slot": "team_a"},
-        {"id": "r32_14", "date": "03 Jul, 6:00 PM", "team_a": "2° Grupo D", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo G", "flag_b": "un", "next_match": "r16_7", "slot": "team_b"},
-        {"id": "r32_15", "date": "03 Jul, 2:00 PM", "team_a": "1° Grupo B", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #7", "flag_b": "un", "next_match": "r16_8", "slot": "team_a"},
-        {"id": "r32_16", "date": "04 Jul, 2:00 PM", "team_a": "1° Grupo K", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #8", "flag_b": "un", "next_match": "r16_8", "slot": "team_b"}
+        {"id": "r32_1", "date": "29 Jun, 2:00 PM", "team_a": "1° Grupo E", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #1", "flag_b": "un", "next_match": "r16_1", "slot": "team_a", "stadium": "Gillette Stadium"},
+        {"id": "r32_2", "date": "30 Jun, 2:00 PM", "team_a": "1° Grupo I", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #2", "flag_b": "un", "next_match": "r16_1", "slot": "team_b", "stadium": "MetLife Stadium"},
+        {"id": "r32_3", "date": "28 Jun, 2:00 PM", "team_a": "2° Grupo A", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo B", "flag_b": "un", "next_match": "r16_2", "slot": "team_a", "stadium": "SoFi Stadium"},
+        {"id": "r32_4", "date": "30 Jun, 6:00 PM", "team_a": "1° Grupo F", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo C", "flag_b": "un", "next_match": "r16_2", "slot": "team_b", "stadium": "Estadio BBVA"},
+        {"id": "r32_5", "date": "29 Jun, 6:00 PM", "team_a": "1° Grupo C", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo F", "flag_b": "un", "next_match": "r16_3", "slot": "team_a", "stadium": "NRG Stadium"},
+        {"id": "r32_6", "date": "30 Jun, 6:00 PM", "team_a": "2° Grupo E", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo I", "flag_b": "un", "next_match": "r16_3", "slot": "team_b", "stadium": "AT&T Stadium"},
+        {"id": "r32_7", "date": "01 Jul, 2:00 PM", "team_a": "1° Grupo A", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #3", "flag_b": "un", "next_match": "r16_4", "slot": "team_a", "stadium": "Estadio Azteca"},
+        {"id": "r32_8", "date": "01 Jul, 6:00 PM", "team_a": "1° Grupo L", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #4", "flag_b": "un", "next_match": "r16_4", "slot": "team_b", "stadium": "Mercedes-Benz Stadium"},
+        {"id": "r32_9", "date": "02 Jul, 2:00 PM", "team_a": "2° Grupo K", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo L", "flag_b": "un", "next_match": "r16_5", "slot": "team_a", "stadium": "BMO Field"},
+        {"id": "r32_10", "date": "02 Jul, 6:00 PM", "team_a": "1° Grupo H", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo J", "flag_b": "un", "next_match": "r16_5", "slot": "team_b", "stadium": "SoFi Stadium"},
+        {"id": "r32_11", "date": "02 Jul, 2:00 PM", "team_a": "1° Grupo D", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #5", "flag_b": "un", "next_match": "r16_6", "slot": "team_a", "stadium": "Levi's Stadium"},
+        {"id": "r32_12", "date": "01 Jul, 2:00 PM", "team_a": "1° Grupo G", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #6", "flag_b": "un", "next_match": "r16_6", "slot": "team_b", "stadium": "Lumen Field"},
+        {"id": "r32_13", "date": "03 Jul, 6:00 PM", "team_a": "1° Grupo J", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo H", "flag_b": "un", "next_match": "r16_7", "slot": "team_a", "stadium": "Hard Rock Stadium"},
+        {"id": "r32_14", "date": "03 Jul, 6:00 PM", "team_a": "2° Grupo D", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "2° Grupo G", "flag_b": "un", "next_match": "r16_7", "slot": "team_b", "stadium": "AT&T Stadium"},
+        {"id": "r32_15", "date": "03 Jul, 2:00 PM", "team_a": "1° Grupo B", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #7", "flag_b": "un", "next_match": "r16_8", "slot": "team_a", "stadium": "BC Place"},
+        {"id": "r32_16", "date": "04 Jul, 2:00 PM", "team_a": "1° Grupo K", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "3° Mejor #8", "flag_b": "un", "next_match": "r16_8", "slot": "team_b", "stadium": "Arrowhead Stadium"}
     ]
     r16 = [
-        {"id": "r16_1", "date": "04 Jul, 2:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "qf_1", "slot": "team_a"},
-        {"id": "r16_2", "date": "04 Jul, 6:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "qf_1", "slot": "team_b"},
-        {"id": "r16_3", "date": "05 Jul, 2:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "qf_2", "slot": "team_a"},
-        {"id": "r16_4", "date": "05 Jul, 6:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "qf_2", "slot": "team_b"},
-        {"id": "r16_5", "date": "06 Jul, 2:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "qf_3", "slot": "team_a"},
-        {"id": "r16_6", "date": "06 Jul, 6:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "qf_3", "slot": "team_b"},
-        {"id": "r16_7", "date": "07 Jul, 2:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "qf_4", "slot": "team_a"},
-        {"id": "r16_8", "date": "07 Jul, 6:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "qf_4", "slot": "team_b"}
+        {"id": "r16_1", "date": "04 Jul, 2:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "qf_1", "slot": "team_a", "stadium": "NRG Stadium"},
+        {"id": "r16_2", "date": "04 Jul, 6:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "qf_1", "slot": "team_b", "stadium": "Lincoln Financial"},
+        {"id": "r16_3", "date": "05 Jul, 2:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "qf_2", "slot": "team_a", "stadium": "MetLife Stadium"},
+        {"id": "r16_4", "date": "05 Jul, 6:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "qf_2", "slot": "team_b", "stadium": "Estadio Azteca"},
+        {"id": "r16_5", "date": "06 Jul, 2:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "qf_3", "slot": "team_a", "stadium": "AT&T Stadium"},
+        {"id": "r16_6", "date": "06 Jul, 6:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "qf_3", "slot": "team_b", "stadium": "Lumen Field"},
+        {"id": "r16_7", "date": "07 Jul, 2:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "qf_4", "slot": "team_a", "stadium": "Mercedes-Benz Stadium"},
+        {"id": "r16_8", "date": "07 Jul, 6:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "qf_4", "slot": "team_b", "stadium": "BC Place"}
     ]
     qf = [
-        {"id": "qf_1", "date": "09 Jul, 3:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "sf_1", "slot": "team_a"},
-        {"id": "qf_2", "date": "09 Jul, 7:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "sf_1", "slot": "team_b"},
-        {"id": "qf_3", "date": "10 Jul, 3:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "sf_2", "slot": "team_a"},
-        {"id": "qf_4", "date": "10 Jul, 7:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "sf_2", "slot": "team_b"}
+        {"id": "qf_1", "date": "09 Jul, 3:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "sf_1", "slot": "team_a", "stadium": "Gillette Stadium"},
+        {"id": "qf_2", "date": "09 Jul, 7:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "sf_1", "slot": "team_b", "stadium": "SoFi Stadium"},
+        {"id": "qf_3", "date": "10 Jul, 3:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "sf_2", "slot": "team_a", "stadium": "Hard Rock Stadium"},
+        {"id": "qf_4", "date": "10 Jul, 7:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "sf_2", "slot": "team_b", "stadium": "Arrowhead Stadium"}
     ]
     sf = [
-        {"id": "sf_1", "date": "14 Jul, 8:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "final", "slot": "team_a"},
-        {"id": "sf_2", "date": "15 Jul, 8:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "final", "slot": "team_b"}
+        {"id": "sf_1", "date": "14 Jul, 8:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "final", "slot": "team_a", "stadium": "AT&T Stadium"},
+        {"id": "sf_2", "date": "15 Jul, 8:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": "final", "slot": "team_b", "stadium": "Mercedes-Benz Stadium"}
     ]
     final = [
-        {"id": "final", "date": "19 Jul, 4:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": None, "slot": None}
+        {"id": "final", "date": "19 Jul, 4:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": None, "slot": None, "stadium": "MetLife Stadium"}
     ]
     third_place = [
-        {"id": "third_place", "date": "18 Jul, 4:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": None, "slot": None}
+        {"id": "third_place", "date": "18 Jul, 4:00 PM", "team_a": "A definir", "flag_a": "un", "score_a": None, "score_b": None, "team_b": "A definir", "flag_b": "un", "next_match": None, "slot": None, "stadium": "Hard Rock Stadium"}
     ]
     bracket_data = {
         "round_of_32": r32, "round_of_16": r16, "quarter_finals": qf, "semis": sf, "final": final, "third_place": third_place
@@ -408,6 +408,8 @@ def get_bracket():
                             m["score_a"] = s["score_a"]
                             m["score_b"] = s["score_b"]
                         m["penalty_winner"] = s["penalty_winner"]
+                        if s.get("stadium") and s["stadium"] != "A definir":
+                            m["stadium"] = s["stadium"]
                         found = True
                         break
                 if found:
