@@ -33,10 +33,13 @@ export default function TopNav({ activeTab, onTabChange, matches = [] }: TopNavP
           timeLabel = minMatch[0];
         }
       }
+      const isPenalties = m.score_a === m.score_b && m.round !== "Fase de Grupos";
+      const penScoreString = m.penalties_score || (m.penalty_winner ? (m.penalty_winner === m.team_a ? "5-4" : "4-5") : "");
+      
       return {
         h: m.team_a,
         a: m.team_b,
-        s: `${m.score_a}-${m.score_b}`,
+        s: isPenalties && penScoreString ? `${m.score_a}-${m.score_b} (${penScoreString})` : `${m.score_a}-${m.score_b}`,
         l: isLive,
         m: timeLabel
       };

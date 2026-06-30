@@ -258,9 +258,16 @@ export default function MatchesView({ matches, onScoreChange, onMatchSelect, sel
                                 EN VIVO
                               </span>
                             ) : finished ? (
-                              <span className="text-[10px] bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded font-bold uppercase">
-                                {isHoyOrManana ? "Finalizado" : m.status?.split(" | ")?.[0] || "Finalizado"}
-                              </span>
+                              <>
+                                <span className="text-[10px] bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded font-bold uppercase">
+                                  {isHoyOrManana ? "Finalizado" : m.status?.split(" | ")?.[0] || "Finalizado"}
+                                </span>
+                                {m.score_a !== null && m.score_b !== null && m.score_a === m.score_b && m.round !== "Fase de Grupos" && (
+                                  <span className="text-[10px] bg-fifa-accent/15 text-fifa-accent border border-fifa-accent/30 px-2 py-0.5 rounded font-black shadow-[0_0_8px_rgba(0,229,255,0.1)]">
+                                    PEN: {m.penalties_score || (m.penalty_winner ? (m.penalty_winner === m.team_a ? "5-4" : "4-5") : "A definir")}
+                                  </span>
+                                )}
+                              </>
                             ) : (
                               <span className="text-[10px] text-on-primary-container/40 uppercase font-bold">
                                 {isHoyOrManana ? "Próximamente" : m.status?.split(", ")?.[0] || "Próximamente"}

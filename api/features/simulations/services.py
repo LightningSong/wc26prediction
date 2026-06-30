@@ -162,7 +162,9 @@ def update_bracket_from_groups(groups, bracket, matches):
         m["flag_b"] = team_b["flag"]
         if team_a_changed: m["score_a"] = None
         if team_b_changed: m["score_b"] = None
-        if team_a_changed or team_b_changed: m["penalty_winner"] = None
+        if team_a_changed or team_b_changed:
+            m["penalty_winner"] = None
+            m["penalties_score"] = None
 
     return propagate_bracket(bracket)
 
@@ -210,6 +212,7 @@ def propagate_bracket(bracket):
                 next_match["score_a"] = None
                 next_match["score_b"] = None
                 next_match["penalty_winner"] = None
+                next_match["penalties_score"] = None
 
     # Handle Third Place Match
     sf1 = next((m for m in bracket["semis"] if m["id"] == "sf_1"), None)
@@ -246,15 +249,15 @@ def propagate_bracket(bracket):
         
         if gran_final.get("score_a") is None or gran_final.get("score_b") is None:
             if gran_final["team_a"] != w1:
-                gran_final["team_a"] = w1; gran_final["flag_a"] = wf1; gran_final["score_a"] = None; gran_final["score_b"] = None; gran_final["penalty_winner"] = None
+                gran_final["team_a"] = w1; gran_final["flag_a"] = wf1; gran_final["score_a"] = None; gran_final["score_b"] = None; gran_final["penalty_winner"] = None; gran_final["penalties_score"] = None
             if gran_final["team_b"] != w2:
-                gran_final["team_b"] = w2; gran_final["flag_b"] = wf2; gran_final["score_a"] = None; gran_final["score_b"] = None; gran_final["penalty_winner"] = None
-                
+                gran_final["team_b"] = w2; gran_final["flag_b"] = wf2; gran_final["score_a"] = None; gran_final["score_b"] = None; gran_final["penalty_winner"] = None; gran_final["penalties_score"] = None
+                 
         if third_place.get("score_a") is None or third_place.get("score_b") is None:
             if third_place["team_a"] != l1:
-                third_place["team_a"] = l1; third_place["flag_a"] = lf1; third_place["score_a"] = None; third_place["score_b"] = None; third_place["penalty_winner"] = None
+                third_place["team_a"] = l1; third_place["flag_a"] = lf1; third_place["score_a"] = None; third_place["score_b"] = None; third_place["penalty_winner"] = None; third_place["penalties_score"] = None
             if third_place["team_b"] != l2:
-                third_place["team_b"] = l2; third_place["flag_b"] = lf2; third_place["score_a"] = None; third_place["score_b"] = None; third_place["penalty_winner"] = None
+                third_place["team_b"] = l2; third_place["flag_b"] = lf2; third_place["score_a"] = None; third_place["score_b"] = None; third_place["penalty_winner"] = None; third_place["penalties_score"] = None
 
     return bracket
 
@@ -295,6 +298,31 @@ def run_full_simulation(state, stochastic=False):
                     pts_a = ranks.get(m["team_a"], {}).get("points", 1400)
                     pts_b = ranks.get(m["team_b"], {}).get("points", 1400)
                     m["penalty_winner"] = m["team_a"] if pts_a > pts_b else m["team_b"]
+                    
+                    # Generate a realistic penalty score
+                    import random
+                    if m["penalty_winner"] == m["team_a"]:
+                        pen_a = random.choice([4, 5, 5, 4, 3])
+                        if pen_a == 5:
+                            pen_b = random.choice([4, 3, 5])
+                            if pen_b == 5:
+                                pen_a, pen_b = 6, 5
+                        elif pen_a == 4:
+                            pen_b = random.choice([3, 2])
+                        else:
+                            pen_b = 2
+                        m["penalties_score"] = f"{pen_a}-{pen_b}"
+                    else:
+                        pen_b = random.choice([4, 5, 5, 4, 3])
+                        if pen_b == 5:
+                            pen_a = random.choice([4, 3, 5])
+                            if pen_a == 5:
+                                pen_a, pen_b = 5, 6
+                        elif pen_b == 4:
+                            pen_a = random.choice([3, 2])
+                        else:
+                            pen_a = 2
+                        m["penalties_score"] = f"{pen_a}-{pen_b}"
 
         bracket = propagate_bracket(bracket)
 

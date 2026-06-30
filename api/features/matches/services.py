@@ -216,6 +216,7 @@ def propagate_bracket_changes(bracket):
                 next_m["score_a"] = None
                 next_m["score_b"] = None
                 next_m["penalty_winner"] = None
+                next_m["penalties_score"] = None
                 
     sf1 = next((m for m in bracket["semis"] if m["id"] == "sf_1"), None)
     sf2 = next((m for m in bracket["semis"] if m["id"] == "sf_2"), None)
@@ -256,14 +257,14 @@ def propagate_bracket_changes(bracket):
         w2, wf2, l2, lf2 = get_winner_loser(sf2)
         if gran_final.get("score_a") is None or gran_final.get("score_b") is None:
             if gran_final.get("team_a") != w1:
-                gran_final["team_a"] = w1; gran_final["flag_a"] = wf1; gran_final["score_a"] = None; gran_final["score_b"] = None; gran_final["penalty_winner"] = None
+                gran_final["team_a"] = w1; gran_final["flag_a"] = wf1; gran_final["score_a"] = None; gran_final["score_b"] = None; gran_final["penalty_winner"] = None; gran_final["penalties_score"] = None
             if gran_final.get("team_b") != w2:
-                gran_final["team_b"] = w2; gran_final["flag_b"] = wf2; gran_final["score_a"] = None; gran_final["score_b"] = None; gran_final["penalty_winner"] = None
+                gran_final["team_b"] = w2; gran_final["flag_b"] = wf2; gran_final["score_a"] = None; gran_final["score_b"] = None; gran_final["penalty_winner"] = None; gran_final["penalties_score"] = None
         if third_place.get("score_a") is None or third_place.get("score_b") is None:
             if third_place.get("team_a") != l1:
-                third_place["team_a"] = l1; third_place["flag_a"] = lf1; third_place["score_a"] = None; third_place["score_b"] = None; third_place["penalty_winner"] = None
+                third_place["team_a"] = l1; third_place["flag_a"] = lf1; third_place["score_a"] = None; third_place["score_b"] = None; third_place["penalty_winner"] = None; third_place["penalties_score"] = None
             if third_place.get("team_b") != l2:
-                third_place["team_b"] = l2; third_place["flag_b"] = lf2; third_place["score_a"] = None; third_place["score_b"] = None; third_place["penalty_winner"] = None
+                third_place["team_b"] = l2; third_place["flag_b"] = lf2; third_place["score_a"] = None; third_place["score_b"] = None; third_place["penalty_winner"] = None; third_place["penalties_score"] = None
     return bracket
 
 def get_bracket():
@@ -408,6 +409,7 @@ def get_bracket():
                             m["score_a"] = s["score_a"]
                             m["score_b"] = s["score_b"]
                         m["penalty_winner"] = s["penalty_winner"]
+                        m["penalties_score"] = s.get("penalties_score")
                         if s.get("stadium") and s["stadium"] != "A definir":
                             m["stadium"] = s["stadium"]
                         found = True
@@ -548,6 +550,7 @@ def get_all_matches():
                 "score_a": m.get("score_a"),
                 "score_b": m.get("score_b"),
                 "penalty_winner": m.get("penalty_winner"),
+                "penalties_score": m.get("penalties_score"),
                 "status": status,
                 "date": match_date.isoformat(),
                 "stadium": m.get("stadium", "A definir"),

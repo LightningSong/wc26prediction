@@ -312,6 +312,7 @@ class SoccerScraper:
                         score_b = int(m.group(2))
                     
                     pen_winner = None
+                    pen_score = None
                     if score_a is not None and score_b is not None and score_a == score_b:
                         # Try parsing penalty shootout score first
                         for tr in box.find_all('tr'):
@@ -322,6 +323,7 @@ class SoccerScraper:
                                 if m_pen:
                                     pen_a = int(m_pen.group(1))
                                     pen_b = int(m_pen.group(2))
+                                    pen_score = f"{pen_a}-{pen_b}"
                                     if pen_a > pen_b:
                                         pen_winner = home_es
                                     elif pen_b > pen_a:
@@ -348,6 +350,7 @@ class SoccerScraper:
                         "score_a": score_a,
                         "score_b": score_b,
                         "penalty_winner": pen_winner,
+                        "penalties_score": pen_score,
                         "stadium": stadium_text
                     })
             return knockout_results

@@ -171,7 +171,7 @@ export default function BracketView({ bracket, onAdvanceTeam, onBracketScoreChan
         </div>
         {hasScore && sa === sb && match.penalty_winner && (
           <div className="absolute -top-2 -right-2 text-[7px] text-center bg-primary text-white font-black px-2 py-0.5 rounded-full uppercase tracking-widest shadow-md">
-            Pen: {match.penalty_winner.substring(0, 3)}
+            Pen: {match.penalties_score || (match.penalty_winner === match.team_a ? "5-4" : "4-5")} ({match.penalty_winner.substring(0, 3)})
           </div>
         )}
       </div>

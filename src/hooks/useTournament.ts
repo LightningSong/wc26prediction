@@ -69,6 +69,7 @@ export function useTournament() {
           nextMatch.score_a = null;
           nextMatch.score_b = null;
           nextMatch.penalty_winner = null;
+          nextMatch.penalties_score = null;
         }
       });
     }
@@ -119,13 +120,13 @@ export function useTournament() {
       const res2 = getMatchWinnerAndLoser(sf2);
       
       if (granFinal.score_a === null || granFinal.score_b === null) {
-        if (granFinal.team_a !== res1.winner) { granFinal.team_a = res1.winner; granFinal.flag_a = res1.wFlag; granFinal.score_a = null; granFinal.score_b = null; granFinal.penalty_winner = null; }
-        if (granFinal.team_b !== res2.winner) { granFinal.team_b = res2.winner; granFinal.flag_b = res2.wFlag; granFinal.score_a = null; granFinal.score_b = null; granFinal.penalty_winner = null; }
+        if (granFinal.team_a !== res1.winner) { granFinal.team_a = res1.winner; granFinal.flag_a = res1.wFlag; granFinal.score_a = null; granFinal.score_b = null; granFinal.penalty_winner = null; granFinal.penalties_score = null; }
+        if (granFinal.team_b !== res2.winner) { granFinal.team_b = res2.winner; granFinal.flag_b = res2.wFlag; granFinal.score_a = null; granFinal.score_b = null; granFinal.penalty_winner = null; granFinal.penalties_score = null; }
       }
       
       if (thirdPlace.score_a === null || thirdPlace.score_b === null) {
-        if (thirdPlace.team_a !== res1.loser) { thirdPlace.team_a = res1.loser; thirdPlace.flag_a = res1.lFlag; thirdPlace.score_a = null; thirdPlace.score_b = null; thirdPlace.penalty_winner = null; }
-        if (thirdPlace.team_b !== res2.loser) { thirdPlace.team_b = res2.loser; thirdPlace.flag_b = res2.lFlag; thirdPlace.score_a = null; thirdPlace.score_b = null; thirdPlace.penalty_winner = null; }
+        if (thirdPlace.team_a !== res1.loser) { thirdPlace.team_a = res1.loser; thirdPlace.flag_a = res1.lFlag; thirdPlace.score_a = null; thirdPlace.score_b = null; thirdPlace.penalty_winner = null; thirdPlace.penalties_score = null; }
+        if (thirdPlace.team_b !== res2.loser) { thirdPlace.team_b = res2.loser; thirdPlace.flag_b = res2.lFlag; thirdPlace.score_a = null; thirdPlace.score_b = null; thirdPlace.penalty_winner = null; thirdPlace.penalties_score = null; }
       }
     }
     
@@ -251,6 +252,7 @@ export function useTournament() {
         score_a: teamAChanged ? null : m.score_a,
         score_b: teamBChanged ? null : m.score_b,
         penalty_winner: (teamAChanged || teamBChanged) ? null : m.penalty_winner,
+        penalties_score: (teamAChanged || teamBChanged) ? null : m.penalties_score,
       };
     });
 
@@ -533,6 +535,7 @@ export function useTournament() {
       if (idx !== -1) {
         newBracket[round][idx][team === 'a' ? 'score_a' : 'score_b'] = scoreVal;
         newBracket[round][idx].penalty_winner = null;
+        newBracket[round][idx].penalties_score = null;
         break;
       }
     }
@@ -550,7 +553,10 @@ export function useTournament() {
     for (const round of Object.keys(newBracket)) {
       const idx = newBracket[round].findIndex((m: any) => m.id === matchId);
       if (idx !== -1) {
-        newBracket[round][idx].penalty_winner = winnerName;
+        const m = newBracket[round][idx];
+        m.penalty_winner = winnerName;
+        // Default penalty score when manually advancing team
+        m.penalties_score = winnerName === m.team_a ? "5-4" : "4-5";
         break;
       }
     }
@@ -591,6 +597,7 @@ export function useTournament() {
           score_a: bm.score_a,
           score_b: bm.score_b,
           penalty_winner: bm.penalty_winner,
+          penalties_score: bm.penalties_score,
           status: updatedStatus
         };
       }

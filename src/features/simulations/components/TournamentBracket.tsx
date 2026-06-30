@@ -155,7 +155,7 @@ export default function TournamentBracket({
         {/* Penalty badge */}
         {hasScore && sa === sb && match.penalty_winner && (
           <div className="absolute -top-2 -right-2 text-[7px] text-center bg-[#1e293b] text-fifa-accent font-black px-2 py-0.5 rounded-full border border-fifa-accent/30 uppercase tracking-widest shadow-md">
-            Pen: {match.penalty_winner.substring(0, 3)}
+            Pen: {match.penalties_score || (match.penalty_winner === match.team_a ? "5-4" : "4-5")} ({match.penalty_winner.substring(0, 3)})
           </div>
         )}
       </div>

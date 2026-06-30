@@ -205,7 +205,7 @@ export default function PredictionPanel({ selectedMatch, liveScore, layoutMode =
 
           {/* Monte Carlo probabilities */}
           <div className="flex flex-col gap-2.5 animate-gsap-fade">
-            <span className="text-[10px] text-fifa-muted uppercase tracking-widest font-bold">MONTE CARLO</span>
+
             <div className="flex flex-col gap-2 bg-black/20 border border-white/5 p-4 rounded-2xl">
               {[
                 { label: selectedMatch.team_a, value: data.global_probabilities.win_a, color: "from-fifa-primary to-pink-500", glow: "shadow-fifa-primary/20" },
@@ -230,9 +230,7 @@ export default function PredictionPanel({ selectedMatch, liveScore, layoutMode =
 
           {/* Goal Probability Matrix 7x7 */}
           <div className="flex flex-col gap-2.5 animate-gsap-fade">
-            <span className="text-[10px] text-fifa-muted uppercase tracking-widest font-bold">
-              Matriz de Goles (Poisson Heatmap)
-            </span>
+
             <div className="overflow-x-auto no-scrollbar bg-black/20 border border-white/5 p-4 rounded-2xl">
               <table className="text-center text-[9px] border-collapse w-full prob-matrix">
                 <thead>
