@@ -94,12 +94,27 @@ def update_bracket_from_groups(groups, bracket, matches):
 
     sorted_thirds = sorted(third_place_teams, key=lambda x: (x["pts"], x["dg"], x["gf"]), reverse=True)
 
+    group_mapping = {
+        "0": "D",
+        "1": "F",
+        "2": "E",
+        "3": "K",
+        "4": "B",
+        "5": "I",
+        "6": "J",
+        "7": "H"
+    }
+
     def get_team_info(type_val, key):
         if type_val == '3rd':
-            rank_idx = int(key)
-            if rank_idx < len(sorted_thirds) and (sorted_thirds[rank_idx]["isGroupComplete"] or is_team_qualified(sorted_thirds[rank_idx], sorted_thirds[rank_idx]["groupName"])):
-                return {"name": sorted_thirds[rank_idx]["name"], "flag": sorted_thirds[rank_idx]["flag"]}
-            return {"name": f"3° Mejor #{rank_idx + 1}", "flag": "un"}
+            group_char = group_mapping.get(key)
+            group_name = f"Grupo {group_char}"
+            group = next((g for g in groups if g["name"] == group_name), None)
+            if group and len(group["teams"]) >= 3:
+                candidate = group["teams"][2]
+                if is_group_complete(group_name) or is_team_qualified(candidate, group_name):
+                    return {"name": candidate["name"], "flag": candidate["flag"]}
+            return {"name": f"3° Mejor #{int(key) + 1}", "flag": "un"}
         else:
             group_name = f"Grupo {key}"
             group = next((g for g in groups if g["name"] == group_name), None)
@@ -109,6 +124,7 @@ def update_bracket_from_groups(groups, bracket, matches):
                 if is_team_qualified(candidate_team, group_name):
                     return {"name": candidate_team["name"], "flag": candidate_team["flag"]}
             return {"name": f"{type_val}° {group_name}", "flag": "un"}
+
 
     r32_mapping = [
         {"a": {"type": '1', "key": 'E'}, "b": {"type": '3rd', "key": '0'}}, # M74

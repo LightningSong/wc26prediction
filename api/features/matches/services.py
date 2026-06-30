@@ -327,13 +327,26 @@ def get_bracket():
                 })
         thirds.sort(key=lambda x: (x["team"]["pts"], x["team"]["dg"], x["team"]["gf"]), reverse=True)
         
+        group_mapping = {
+            "0": "D",
+            "1": "F",
+            "2": "E",
+            "3": "K",
+            "4": "B",
+            "5": "I",
+            "6": "J",
+            "7": "H"
+        }
+        
         def get_team_info(type_str, key_str):
             if type_str == '3rd':
-                idx = int(key_str)
-                if idx < len(thirds):
-                    candidate = thirds[idx]["team"]
+                group_char = group_mapping.get(key_str)
+                group_name = f"Grupo {group_char}"
+                group = next((g for g in standings if g["name"] == group_name), None)
+                if group and len(group["teams"]) >= 3:
+                    candidate = group["teams"][2]
                     return candidate["name"], candidate["flag"]
-                return f"3° Mejor #{idx + 1}", "un"
+                return f"3° Mejor #{int(key_str) + 1}", "un"
             else:
                 group_name = f"Grupo {key_str}"
                 group = next((g for g in standings if g["name"] == group_name), None)
@@ -343,6 +356,7 @@ def get_bracket():
                         candidate = group["teams"][idx]
                         return candidate["name"], candidate["flag"]
                 return f"{type_str}° {group_name}", "un"
+
 
         r32_mapping = [
             {"a": {"type": "1", "key": "E"}, "b": {"type": "3rd", "key": "0"}},

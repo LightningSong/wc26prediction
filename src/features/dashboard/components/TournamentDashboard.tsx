@@ -7,7 +7,7 @@ import TournamentBracket from "@/features/simulations/components/TournamentBrack
 import PredictionPanel from "@/features/predictions/components/PredictionPanel";
 import gsap from "gsap";
 
-const LOCAL_STORAGE_KEY = "wc26_tournament_state_v9";
+const LOCAL_STORAGE_KEY = "wc26_tournament_state_v11";
 
 export default function TournamentDashboard() {
   const [activeTab, setActiveTab] = useState("grupos");
@@ -255,14 +255,29 @@ export default function TournamentDashboard() {
       return `3° Mejor #${rankIndex + 1}`;
     };
 
+    const groupMapping: Record<string, string> = {
+      "0": "D",
+      "1": "F",
+      "2": "E",
+      "3": "K",
+      "4": "B",
+      "5": "I",
+      "6": "J",
+      "7": "H"
+    };
+
     const getTeamInfo = (type: '1' | '2' | '3rd', groupCharOrRank: string) => {
       if (type === '3rd') {
-        const rankIdx = parseInt(groupCharOrRank, 10);
-        const candidate = sortedThirds[rankIdx];
-        if (candidate && (candidate.isGroupComplete || isTeamQualified(candidate, candidate.groupName))) {
-          return { name: candidate.name, flag: candidate.flag };
+        const groupChar = groupMapping[groupCharOrRank];
+        const groupName = `Grupo ${groupChar}`;
+        const group = currentGroups.find(g => g.name === groupName);
+        if (group && group.teams.length >= 3) {
+          const candidate = group.teams[2];
+          if (isGroupComplete(groupName) || isTeamQualified(candidate, groupName)) {
+            return { name: candidate.name, flag: candidate.flag };
+          }
         }
-        return { name: getThirdPlacePlaceholder(rankIdx), flag: 'un' };
+        return { name: getThirdPlacePlaceholder(parseInt(groupCharOrRank, 10)), flag: 'un' };
       } else {
         const groupName = `Grupo ${groupCharOrRank}`;
         const group = currentGroups.find(g => g.name === groupName);
